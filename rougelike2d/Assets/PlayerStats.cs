@@ -9,12 +9,22 @@ public class PlayerStats : MonoBehaviour
     private float currentPlayerAttackPower = 0;
     private float currentPlayerCritChange = 0;
 
+    public GameObject homingMissile;
+    private bool hasPlayerAirBlastUpgrade = false;
 
     private void Awake()
     {
         instance = this;
     }
 
+    public void UnlockHomingMissile()
+    {
+        Instantiate(homingMissile, transform.position, Quaternion.identity);
+    }
+    public void UnlockAirBlast()
+    {
+        hasPlayerAirBlastUpgrade = true;
+    }
 
     public void IncreasePlayerAttackPower(float increaseAmt)
     {
@@ -24,4 +34,13 @@ public class PlayerStats : MonoBehaviour
     {
         currentPlayerCritChange += increaseAmt;
     }
+
+    #region Value Getter
+
+    public bool HasPlayerAirBlastUpgarde()
+    {
+        return hasPlayerAirBlastUpgrade;
+    }
+
+    #endregion
 }

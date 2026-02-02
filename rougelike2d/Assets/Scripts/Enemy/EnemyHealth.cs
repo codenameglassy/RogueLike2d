@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class EnemyHealth : HealthComponent
 {
-    [Header("Knockback")]
-    public float knockbackForce = 8f;
-    public float knockbackDuration = 0.15f;
-
+  
     private bool isKnocked;
 
+    [Header("Components")]
     public EnemyEntity entity;
     public Rigidbody2D rb;
-
     public GameObject deathVfx;
+    [SerializeField]private EnemyData data;
    
     public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
     {
@@ -28,6 +26,7 @@ public class EnemyHealth : HealthComponent
         if(GetCurrentHealth() <= 0)
         {
             Instantiate(deathVfx, transform.position, Quaternion.identity);
+            GameManager.instance.RemoveEnemy(this.transform);
             gameObject.SetActive(false);
         }
         
@@ -39,7 +38,7 @@ public class EnemyHealth : HealthComponent
 
         Vector2 knockbackDir = (rb.position - attackerPosition).normalized;
         rb.velocity = Vector2.zero;
-        rb.AddForce(knockbackDir * knockbackForce, ForceMode2D.Impulse);
+        rb.AddForce(knockbackDir * data.knockbackForce, ForceMode2D.Impulse);
 
         StartCoroutine(KnockbackRoutine());
     }
@@ -47,7 +46,7 @@ public class EnemyHealth : HealthComponent
     IEnumerator KnockbackRoutine()
     {
         isKnocked = true;
-        yield return new WaitForSeconds(knockbackDuration);
+        yield return new WaitForSeconds(data.knockbackDuration);
         rb.velocity = Vector2.zero;
         isKnocked = false;
     }

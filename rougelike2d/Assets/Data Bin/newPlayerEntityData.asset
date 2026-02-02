@@ -20,3 +20,5 @@ MonoBehaviour:
     m_Bits: 128
   attackVfx: {fileID: 8499476955035779425, guid: c3391cc4e92c6d045aeeafe919033c41, type: 3}
   whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
+  basicProjectile: {fileID: 5330485868755721147, guid: cd8ed8f3e11a48244b688d5ab410e97e, type: 3}
+  projectileSpeed: 10

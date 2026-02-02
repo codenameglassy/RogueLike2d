@@ -11,7 +11,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
     private Material defMat;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         defMat = sr.material;
         currentHealth = maxHealth;

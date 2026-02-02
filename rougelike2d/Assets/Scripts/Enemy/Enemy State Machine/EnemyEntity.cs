@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class EnemyEntity : MonoBehaviour
 {
+    [Header("Components")]
     public Animator anim;
     public EnemyData data;
     public Rigidbody2D rb;
-
+    public Transform player;
+    public EnemyAttackComponent attackComponent;
     public EnemyFiniteStateMachine stateMachine { get; private set; }
 
     public EnemyIdleState idleState { get; private set; }
     public EnemyHurtState hurtState { get; private set; }
 
-    public Transform player;
+    [Header("Movement")]
     public float moveSpeed = 3f;
 
-    public EnemyAttackComponent attackComponent;
+    
 
     private void Awake()
     {
@@ -28,6 +30,10 @@ public class EnemyEntity : MonoBehaviour
         hurtState = new EnemyHurtState(this, stateMachine, "Hurt", data);
 
         stateMachine.Initialize(idleState);
+
+        //init
+        GameManager.instance.AddEnemy(this.transform);
+
     }
 
     public virtual void Update()
@@ -38,9 +44,6 @@ public class EnemyEntity : MonoBehaviour
     public virtual void FixedUpdate()
     {
         stateMachine.currentState.PhysicsUpdate();
-
-
-       
     }
 
     public void ChasePlayer()
@@ -77,6 +80,8 @@ public class EnemyEntity : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+
+
 
 
 }

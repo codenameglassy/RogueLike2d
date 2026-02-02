@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877350137923e02439e150d5e85b68e4, type: 3}
+  m_Name: New Unlock Air Blast Upgrade
+  m_EditorClassIdentifier: 
+  upgradeName: Airblast
+  description: Blast waves of Air in Every Direction Upon Melee Attacks.
+  icon: {fileID: 21300000, guid: dac5cf845653a4f689dbe9d871259451, type: 3}
+  rarity: 2

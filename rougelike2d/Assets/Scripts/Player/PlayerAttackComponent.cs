@@ -6,30 +6,51 @@ using MoreMountains.Feedbacks;
 public class PlayerAttackComponent : MonoBehaviour
 {
     public PlayerData data;
+    public PlayerTopDownMovement movementComponent;
   
     [Header("Attack Positions")]
-    public Transform attackPoint;
+    public Transform attackPointRight;
+    public Transform attackPointLeft;
     public Transform attackPointUp;
     public Transform attackPointDown;
     
-
     [Header("Feedbacks")]
     public MMF_Player attackHitFeedback;
 
+    [Header("ShootPoints")]
+    public List<Transform> shootPoints = new List<Transform>();
+
     public void Attack()
     {
-        Collider2D[] hitinfo = Physics2D.OverlapCircleAll(attackPoint.position, data.attackRange, data.damageableLayer);
+        Collider2D[] hitinfoRight = Physics2D.OverlapCircleAll(attackPointRight.position, data.attackRange, data.damageableLayer);
+        Collider2D[] hitinfoLeft = Physics2D.OverlapCircleAll(attackPointLeft.position, data.attackRange, data.damageableLayer);
         Collider2D[] hitinfoUp = Physics2D.OverlapCircleAll(attackPointUp.position, data.attackRange, data.damageableLayer);
         Collider2D[] hitinfoDown = Physics2D.OverlapCircleAll(attackPointDown.position, data.attackRange, data.damageableLayer);
 
-        if(hitinfo != null)
+        switch (movementComponent.IsFacingRight())
         {
-            for (int i = 0; i < hitinfo.Length; i++)
-            {
-                hitinfo[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
-            }
-        }
+            case true:
+                if (hitinfoRight != null)
+                {
+                    for (int i = 0; i < hitinfoRight.Length; i++)
+                    {
+                        hitinfoRight[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                    }
+                }
+                break;
 
+            case false:
+                if (hitinfoLeft != null)
+                {
+                    for (int i = 0; i < hitinfoLeft.Length; i++)
+                    {
+                        hitinfoLeft[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                    }
+                }
+
+                break;
+        }
+    
         if (hitinfoUp != null)
         {
             for (int i = 0; i < hitinfoUp.Length; i++)
@@ -46,22 +67,66 @@ public class PlayerAttackComponent : MonoBehaviour
             }
         }
 
-        if (hitinfo.Length >= 1 ||
+        if (hitinfoRight.Length >= 1 ||
         hitinfoUp.Length >= 1 ||
-        hitinfoDown.Length >= 1)
+        hitinfoDown.Length >= 1 ||
+        hitinfoLeft.Length >= 1)
         {
             Debug.Log("Hit something");
             attackHitFeedback.PlayFeedbacks();
         }
 
-      
+        if (PlayerStats.instance.HasPlayerAirBlastUpgarde())
+        {
+            ShootAtAllDirection();
+        }
+       
+    }
 
+    public void ShootAtAllDirection()
+    {
+        for (int i = 0; i < shootPoints.Count; i++)
+        {
+            GameObject proj = Instantiate(data.basicProjectile, shootPoints[i].position, Quaternion.identity);
+
+            switch (i)
+            {
+                case 0:
+                    //north
+                    proj.GetComponent<ProjectileComponent>().SetDirection(Vector2.up);
+                    break;
+                case 1:
+                    //south
+                    proj.GetComponent<ProjectileComponent>().SetDirection(Vector2.down);
+                    break;
+                case 2:
+                    //east
+                    proj.GetComponent<ProjectileComponent>().SetDirection(Vector2.right);
+                    break;
+                case 3:
+                    //west
+                    proj.GetComponent<ProjectileComponent>().SetDirection(Vector2.left);
+                    break;
+            }
+        }
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(attackPoint.position, data.attackRange);
+        
         Gizmos.DrawWireSphere(attackPointUp.position, data.attackRange);
         Gizmos.DrawWireSphere(attackPointDown.position, data.attackRange);
+       
+
+        switch (movementComponent.IsFacingRight())
+        {
+            case true:
+                Gizmos.DrawWireSphere(attackPointRight.position, data.attackRange);
+                break;
+
+            case false:
+                Gizmos.DrawWireSphere(attackPointLeft.position, data.attackRange);
+                break;
+        }
     }
 }

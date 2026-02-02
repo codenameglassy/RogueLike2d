@@ -19,6 +19,12 @@ public class UpgradeManager : MonoBehaviour
 
     private List<UpgradeSO> currentChoices = new();
 
+    [Header("Rarity Weights")]
+    public float commonWeight = 1f;
+    public float uncommonWeight = 0.6f;
+    public float rareWeight = 0.3f;
+    public float legendaryWeight = 0.1f;
+
     private void Awake()
     {
         instance = this;
@@ -50,11 +56,44 @@ public class UpgradeManager : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            int index = Random.Range(0, pool.Count);
-            result.Add(pool[index]);
-            pool.RemoveAt(index); // prevents duplicates
+            if (pool.Count == 0) break;
+
+            UpgradeSO selected = GetWeightedRandomUpgrade(pool);
+            result.Add(selected);
+            pool.Remove(selected); // prevent duplicates
         }
 
         return result;
+    }
+
+    private UpgradeSO GetWeightedRandomUpgrade(List<UpgradeSO> pool)
+    {
+        float totalWeight = 0f;
+        foreach (var u in pool)
+            totalWeight += GetRarityWeight(u.rarity);
+
+        float randomValue = Random.Range(0f, totalWeight);
+        float cumulative = 0f;
+
+        foreach (var u in pool)
+        {
+            cumulative += GetRarityWeight(u.rarity);
+            if (randomValue <= cumulative)
+                return u;
+        }
+
+        return pool[pool.Count - 1]; // fallback
+    }
+
+    private float GetRarityWeight(UpgradeRarity rarity)
+    {
+        return rarity switch
+        {
+            UpgradeRarity.Common => commonWeight,
+            UpgradeRarity.Uncommon => uncommonWeight,
+            UpgradeRarity.Rare => rareWeight,
+            UpgradeRarity.Legendary => legendaryWeight,
+            _ => 1f
+        };
     }
 }

@@ -9,6 +9,7 @@ public class PlayerTopDownMovement : MonoBehaviour
 
     [Header("Set References")]
     public Animator animator;
+    public SpriteRenderer sr;
 
     [Header("Movement")]
     public float maxSpeed = 5f;
@@ -61,8 +62,8 @@ public class PlayerTopDownMovement : MonoBehaviour
     {
         isFacingRight = !isFacingRight;
         facingDirection *= -1;
-
-        transform.Rotate(0, 180, 0);
+        sr.flipX = !isFacingRight;
+        //transform.Rotate(0, 180, 0);
     }
 
     public void StopMovement()
@@ -70,4 +71,8 @@ public class PlayerTopDownMovement : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
+    public bool IsFacingRight()
+    {
+        return isFacingRight;
+    }
 }

@@ -22,8 +22,8 @@ public class PlayerEntity : MonoBehaviour
     private void Awake()
     {
         stateMachine = new PlayerFinisteStateMachine();
-        idleState = new PlayerIdleState(this, stateMachine, "idle", data);
-        attackState = new PlayerAttackState(this, stateMachine, "attack", data);
+        idleState = new PlayerIdleState(this, stateMachine, "Idle", data);
+        attackState = new PlayerAttackState(this, stateMachine, "Attack", data);
     }
 
     private void Start()

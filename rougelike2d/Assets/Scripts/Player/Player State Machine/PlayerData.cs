@@ -17,5 +17,8 @@ public class PlayerData : ScriptableObject
     public Material whiteMat;
 
 
+    [Header("Projectiles")]
+    public GameObject basicProjectile;
+    public float projectileSpeed = 10f;
 
 }

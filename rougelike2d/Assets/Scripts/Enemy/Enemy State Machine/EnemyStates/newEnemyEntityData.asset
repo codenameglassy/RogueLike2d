@@ -14,3 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtTime: 1
   whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
+  attackDamage: 10
+  attackRange: 1.5
+  attackCoolDown: 0.8
+  damageableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  knockbackForce: 15
+  knockbackDuration: 0.15
