@@ -1,0 +1,2855 @@
+fileFormatVersion: 2
+guid: 5aad0332209c5ab49801ff3170648a82
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Jotem_Frame_20
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 348
+      width: 48
+      height: 34
+    spriteID: cd13edc600d4a3b4fa82a00ea763741b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 348}
+  - name: Jotem_Frame_21
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 390
+      width: 48
+      height: 34
+    spriteID: 51c9e2316168ce24388d556dde01ca11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 390}
+  - name: Jotem_Frame_22
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 4
+      width: 48
+      height: 35
+    spriteID: 38cbc71f5f29a9c46b511812543bf1e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 4}
+  - name: Jotem_Frame_23
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 47
+      width: 48
+      height: 35
+    spriteID: 8c6f4a020b826324b8eb5f12be83db33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 47}
+  - name: Jotem_Frame_24
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 499
+      width: 48
+      height: 36
+    spriteID: 2270dbb58f5c458478d37fa7926b50f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 499}
+  - name: Jotem_Frame_25
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 543
+      width: 48
+      height: 36
+    spriteID: aefb516d3b4d0c041aedd0605ed22a2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 543}
+  - name: Jotem_Frame_26
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 90
+      width: 48
+      height: 35
+    spriteID: 1e05e7cf5f5be6146bd9dd1025e94e24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 90}
+  - name: Jotem_Frame_27
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 432
+      width: 48
+      height: 34
+    spriteID: 306659636613a61478396f8a71209c20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 432}
+  - name: Jotem_Frame_28
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 474
+      width: 48
+      height: 34
+    spriteID: 6a73f78a608724240b11dcb8cb13a497
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 474}
+  - name: Jotem_Frame_29
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 133
+      width: 48
+      height: 35
+    spriteID: 49f88de8664d22c4799dd67ca9b4f721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 133}
+  - name: Jotem_Frame_30
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 176
+      width: 48
+      height: 35
+    spriteID: 9d836336555209042b80703ade08d9a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 176}
+  - name: Jotem_Frame_31
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 516
+      width: 48
+      height: 34
+    spriteID: 2ea5e2693b6c95949b5da79f443153ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 516}
+  - name: Jotem_Frame_32
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 558
+      width: 48
+      height: 34
+    spriteID: 60e1c58b2867fbb4e83d49c556f42af1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 558}
+  - name: Jotem_Frame_33
+    originalName: 
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 219
+      width: 48
+      height: 35
+    spriteID: 6a2f6b0a67c2aa345a223fad10bf62ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 219}
+  - name: Jotem_Frame_34
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.055555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 4
+      width: 47
+      height: 36
+    spriteID: 14f2801ed76743447b6944fac22b1f02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 4}
+  - name: Jotem_Frame_35
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.055555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 48
+      width: 47
+      height: 36
+    spriteID: a7003f2b8818c7b4c80ad37ca57d1370
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 48}
+  - name: Jotem_Frame_36
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.055555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 92
+      width: 47
+      height: 36
+    spriteID: 20dc1794579bdc440a7cd0ec7cb8a385
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 92}
+  - name: Jotem_Frame_37
+    originalName: 
+    pivot: {x: 0.5625, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 98
+      width: 48
+      height: 38
+    spriteID: 5bcd308a4773a8d458d3b08ae0b147dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 98}
+  - name: Jotem_Frame_38
+    originalName: 
+    pivot: {x: 0.5625, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 144
+      width: 48
+      height: 38
+    spriteID: 38a85b018370edb4ab1e10c402bf2f49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 144}
+  - name: Jotem_Frame_39
+    originalName: 
+    pivot: {x: 0.5625, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 190
+      width: 48
+      height: 38
+    spriteID: 8d5c31342dbce454a95b7accb385585e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 190}
+  - name: Jotem_Frame_40
+    originalName: 
+    pivot: {x: 0.5625, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 236
+      width: 48
+      height: 38
+    spriteID: 8fbd37c1b90cda848ae2f11ea17947f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 236}
+  - name: Jotem_Frame_41
+    originalName: 
+    pivot: {x: 0.5625, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 282
+      width: 48
+      height: 38
+    spriteID: ed82e446d2d450e428cc16bb90fb2b57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 282}
+  - name: Jotem_Frame_42
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 600
+      width: 48
+      height: 34
+    spriteID: 722ddb56f2c629f478c9f1d147fafadb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 600}
+  - name: Jotem_Frame_43
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 642
+      width: 48
+      height: 34
+    spriteID: 6f06daa06d55598479aca90da1bdee48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 642}
+  - name: Jotem_Frame_44
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 262
+      width: 48
+      height: 35
+    spriteID: 3b93fc2731ba373419fd614226d01f1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 262}
+  - name: Jotem_Frame_45
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 684
+      width: 48
+      height: 34
+    spriteID: 0f46ab6bb3fbccd4da5026de7937e57c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 684}
+  - name: Jotem_Frame_46
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 412
+      width: 48
+      height: 37
+    spriteID: ab8e83c84c922b542a5daef3b287e3d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 412}
+  - name: Jotem_Frame_47
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 775
+      width: 48
+      height: 40
+    spriteID: f96a69cc03cfd214e9ae9331a7f2f5a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 775}
+  - name: Jotem_Frame_48
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 724
+      width: 48
+      height: 43
+    spriteID: f6eb8531beaf82a4b996114094c083fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 724}
+  - name: Jotem_Frame_49
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 726
+      width: 48
+      height: 34
+    spriteID: f89e8b5daddb8ef419d6cf993f565cb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 726}
+  - name: Jotem_Frame_50
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 768
+      width: 48
+      height: 34
+    spriteID: bc496e2635e4fc94faa499498774618a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 768}
+  - name: Jotem_Frame_51
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 810
+      width: 48
+      height: 34
+    spriteID: e92ed1c898b846247a646e0c7df6ebd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 810}
+  - name: Jotem_Frame_52
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 852
+      width: 48
+      height: 34
+    spriteID: 2b1fdff45cc11b24a9e4ab5aa93676a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 852}
+  - name: Jotem_Frame_53
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 894
+      width: 48
+      height: 34
+    spriteID: 804fb0c39d7cfaa4280becc4df0141ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 894}
+  - name: Jotem_Frame_54
+    originalName: 
+    pivot: {x: 0.4464286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 328
+      width: 56
+      height: 43
+    spriteID: b81f1bc8df071b94b91002eb1f7aa8b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 328}
+  - name: Jotem_Frame_60
+    originalName: 
+    pivot: {x: 0.23809524, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 4
+      width: 84
+      height: 46
+    spriteID: c8a433080f64cf241b4329148f940abb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 4}
+  - name: Jotem_Frame_61
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 936
+      width: 48
+      height: 34
+    spriteID: 00bc3387a80bf964d8d0cb62d4cf690d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 936}
+  - name: Jotem_Frame_62
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 978
+      width: 48
+      height: 34
+    spriteID: 155fd84a25bddef44b47e5b80a300bba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 978}
+  - name: Jotem_Frame_63
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 305
+      width: 48
+      height: 35
+    spriteID: 86d899fa26b82bd43b6c17ca4ceab773
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 305}
+  - name: Jotem_Frame_64
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 381
+      width: 48
+      height: 32
+    spriteID: b63a5360859f5cb47b5cfec5da782b62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 381}
+  - name: Jotem_Frame_65
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 461
+      width: 48
+      height: 31
+    spriteID: 943add73fdd30e242949351af4c8cba3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 461}
+  - name: Jotem_Frame_66
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 421
+      width: 48
+      height: 32
+    spriteID: 255f29d4690b9f64dba850d4add1ad94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 421}
+  - name: Jotem_Frame_67
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 4
+      width: 48
+      height: 34
+    spriteID: 60321eff3b284af4bba19e81ed7bc287
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 4}
+  - name: Jotem_Frame_68
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 46
+      width: 48
+      height: 34
+    spriteID: e499b2cce9e49ee4db4945adfaf3a91d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 46}
+  - name: Jotem_Frame_69
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 88
+      width: 48
+      height: 34
+    spriteID: 317be6d942d22404f8df14aab068d23a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 88}
+  - name: Jotem_Frame_70
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 130
+      width: 48
+      height: 34
+    spriteID: 5b8690b1c238a0f4c82b17ee9793f77d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 130}
+  - name: Jotem_Frame_71
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 172
+      width: 48
+      height: 34
+    spriteID: 0eb4730c490a13b4382edb49cb373d59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 172}
+  - name: Jotem_Frame_72
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 214
+      width: 48
+      height: 34
+    spriteID: 38349bdffb1815646ad7c066b003b220
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 214}
+  - name: Jotem_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 945
+      width: 54
+      height: 34
+    spriteID: 3300a2aa211efd746a261d6555730a59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 945}
+  - name: Jotem_Frame_74
+    originalName: 
+    pivot: {x: 0.509434, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 328
+      width: 53
+      height: 34
+    spriteID: c2aa893a3fe7b0a41b8feb32068206ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 328}
+  - name: Jotem_Frame_75
+    originalName: 
+    pivot: {x: 0.509434, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 370
+      width: 53
+      height: 34
+    spriteID: 973a73722da66294bbfd8352330f169a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 370}
+  - name: Jotem_Frame_76
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 457
+      width: 51
+      height: 34
+    spriteID: 8a841eaa05d3d8743b9f5658989b9a8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 457}
+  - name: Jotem_Frame_77
+    originalName: 
+    pivot: {x: 0.49090907, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 823
+      width: 55
+      height: 34
+    spriteID: 33a10c85bbb07054a9cc07b82b7c8405
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 823}
+  - name: Jotem_Frame_78
+    originalName: 
+    pivot: {x: 0.421875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 682
+      width: 64
+      height: 34
+    spriteID: 7b88c06564423e541878b19d41d09b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 682}
+  - name: Jotem_Frame_79
+    originalName: 
+    pivot: {x: 0.43548387, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 423
+      width: 62
+      height: 37
+    spriteID: 3b32e55b2055e844988f3d08e25c6a15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 423}
+  - name: Jotem_Frame_80
+    originalName: 
+    pivot: {x: 0.41538462, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 468
+      width: 65
+      height: 35
+    spriteID: 497b9adcbc976954c80d77c677bbc9d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 468}
+  - name: Jotem_Frame_81
+    originalName: 
+    pivot: {x: 0.421875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 511
+      width: 64
+      height: 35
+    spriteID: a6d8a1ea36946874e9c9473f0c2c0402
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 511}
+  - name: Jotem_Frame_82
+    originalName: 
+    pivot: {x: 0.421875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 554
+      width: 64
+      height: 35
+    spriteID: 92aa85968d6070641a02b028a68f000a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 554}
+  - name: Jotem_Frame_83
+    originalName: 
+    pivot: {x: 0.421875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 597
+      width: 64
+      height: 35
+    spriteID: e902f8fd9f534284189244f43d5a3f3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 597}
+  - name: Jotem_Frame_84
+    originalName: 
+    pivot: {x: 0.42857146, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 281
+      width: 63
+      height: 39
+    spriteID: ca9bd0c6f99e2604a98fc49362e58f5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 281}
+  - name: Jotem_Frame_85
+    originalName: 
+    pivot: {x: 0.41538462, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 234
+      width: 65
+      height: 39
+    spriteID: 8ab8f518472d1bc43834ed644c4da45f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 234}
+  - name: Jotem_Frame_86
+    originalName: 
+    pivot: {x: 0.41538462, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 379
+      width: 65
+      height: 36
+    spriteID: e0656bf7703ff0f458e132fa1d5bc501
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 379}
+  - name: Jotem_Frame_87
+    originalName: 
+    pivot: {x: 0.41538462, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 640
+      width: 65
+      height: 34
+    spriteID: a905083cfb118744bb791586c686d466
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 640}
+  - name: Jotem_Frame_88
+    originalName: 
+    pivot: {x: 0.40298507, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 75
+      width: 67
+      height: 56
+    spriteID: d9be73cb94b598744bd099aef3780c28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 75}
+  - name: Jotem_Frame_89
+    originalName: 
+    pivot: {x: 0.4, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 80
+      height: 63
+    spriteID: 4733002c0a4f76a4f833a677ab4d6e59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Jotem_Frame_90
+    originalName: 
+    pivot: {x: 0.421875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 185
+      width: 64
+      height: 41
+    spriteID: 5c82c6d6eb8c3fc43bd870bdbfd77f2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 185}
+  - name: Jotem_Frame_91
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 256
+      width: 48
+      height: 34
+    spriteID: 8feefd94baed21b41a671dde062f363d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 256}
+  - name: Jotem_Frame_6
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 734
+      width: 26
+      height: 40
+    spriteID: a7ea98a053e1995498b5513a6542ab08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 734}
+  - name: Jotem_Frame_7
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 782
+      width: 26
+      height: 40
+    spriteID: 51dd917a9b172da4395fd6a3def69189
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 782}
+  - name: Jotem_Frame_8
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 962
+      width: 26
+      height: 41
+    spriteID: ddf985249b686394b807d4f44e4c8a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 962}
+  - name: Jotem_Frame_9
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 587
+      width: 26
+      height: 41
+    spriteID: ffdae34fe212cc14e98f99f86fa96479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 587}
+  - name: Jotem_Frame_10
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 636
+      width: 26
+      height: 41
+    spriteID: f12de9fa3aae89f449273e650f28b270
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 636}
+  - name: Jotem_Frame_11
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 685
+      width: 26
+      height: 41
+    spriteID: fedec5d00aff8f942936d572ae31c016
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 685}
+  - name: Jotem_Frame_12
+    originalName: 
+    pivot: {x: 0.48, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 924
+      width: 25
+      height: 40
+    spriteID: b1fb74ea680b86149ac5df8a82af8362
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 924}
+  - name: Jotem_Frame_13
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 724
+      width: 23
+      height: 39
+    spriteID: df9778397ecb92e448925b21d3d329ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 724}
+  - name: Jotem_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 775
+      width: 24
+      height: 38
+    spriteID: 4f8758ea6627fa94d863ed1b762987c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 775}
+  - name: Jotem_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 830
+      width: 26
+      height: 39
+    spriteID: 4eba71714f00d7742ab18bac3eef7198
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 830}
+  - name: Jotem_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 914
+      width: 28
+      height: 40
+    spriteID: 2a2e1629d96f5374b84dfd9857a854b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 914}
+  - name: Jotem_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 877
+      width: 26
+      height: 39
+    spriteID: f660417bac37f4045aae469d9e44a76c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 877}
+  - name: Jotem_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 98
+      width: 24
+      height: 38
+    spriteID: d2b8d69133ac01046a5cee70485702ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 98}
+  - name: Jotem_Frame_19
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 972
+      width: 23
+      height: 39
+    spriteID: e18e50ba5897018448e8a5c1978d58f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 972}
+  - name: Jotem_Frame_0
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 808
+      width: 36
+      height: 45
+    spriteID: aeb67fdefdbf89f45b961f92703f1754
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 808}
+  - name: Jotem_Frame_1
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 861
+      width: 36
+      height: 45
+    spriteID: 3841c0c5d98fadb45bca2ee9037ecba5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 861}
+  - name: Jotem_Frame_2
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 754
+      width: 36
+      height: 46
+    spriteID: eafcc5fef8081b948ba43471a2994995
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 754}
+  - name: Jotem_Frame_3
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 699
+      width: 36
+      height: 47
+    spriteID: ae6dfb304b34a8342840bbe54b830f01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 699}
+  - name: Jotem_Frame_4
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 587
+      width: 36
+      height: 48
+    spriteID: 18cf4b6d695bfd04f877d0e26e17553a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 587}
+  - name: Jotem_Frame_5
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 643
+      width: 36
+      height: 48
+    spriteID: 8a62516aff887a64f904301baa42ab85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 643}
+  - name: Jotem_Frame_59
+    originalName: 
+    pivot: {x: 0.19753087, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 58
+      width: 81
+      height: 32
+    spriteID: 43a475a4bc21e1a4bb6225d674dc5583
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 58}
+  - name: Jotem_Frame_92
+    originalName: 
+    pivot: {x: 0.5625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 298
+      width: 48
+      height: 34
+    spriteID: 6bf9a8480ab796a4290daf0782e1cd15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 298}
+  - name: Jotem_Frame_93
+    originalName: 
+    pivot: {x: 0.6458334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 340
+      width: 48
+      height: 33
+    spriteID: ebbf5b1d78d62164a9f0bb00d1129b5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 340}
+  - name: Jotem_Frame_94
+    originalName: 
+    pivot: {x: 0.7272727, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 351
+      y: 4
+      width: 55
+      height: 27
+    spriteID: 6fc9a025823bf994b93a4487f8f0ca85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 351, y: 4}
+  - name: Jotem_Frame_95
+    originalName: 
+    pivot: {x: 0.63076925, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 29
+      width: 65
+      height: 15
+    spriteID: 607085d68b35e1c4f92c78983a86151a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 29}
+  - name: Jotem_Frame_96
+    originalName: 
+    pivot: {x: 0.63076925, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 4
+      width: 65
+      height: 17
+    spriteID: a1d1a5a3a4ecf244094ba63ce53c0a2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 4}
+  - name: Jotem_Frame_55
+    originalName: 
+    pivot: {x: 0.26666668, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 139
+      width: 75
+      height: 38
+    spriteID: 99b0c2f74fa51cd4d95e736235a1c919
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 139}
+  - name: Jotem_Frame_56
+    originalName: 
+    pivot: {x: 0.7586207, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 865
+      width: 58
+      height: 32
+    spriteID: 97e2fe5c3ab04af4d8f88d66a128df8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 865}
+  - name: Jotem_Frame_57
+    originalName: 
+    pivot: {x: 0.7586207, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 905
+      width: 58
+      height: 32
+    spriteID: 3babc9fcc9c18174f9e1be566debde11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 905}
+  - name: Jotem_Frame_58
+    originalName: 
+    pivot: {x: 0.6415094, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 987
+      width: 53
+      height: 32
+    spriteID: 3c1529d6d679848448fdb3732d3c25bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 987}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 275701709
+    name: Jotem
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Jotem_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: cd13edc600d4a3b4fa82a00ea763741b
+    - name: Jotem_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 51c9e2316168ce24388d556dde01ca11
+    - name: Jotem_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 38cbc71f5f29a9c46b511812543bf1e1
+    - name: Jotem_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 8c6f4a020b826324b8eb5f12be83db33
+    - name: Jotem_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 36
+      spriteId: 2270dbb58f5c458478d37fa7926b50f1
+    - name: Jotem_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 36
+      spriteId: aefb516d3b4d0c041aedd0605ed22a2d
+    - name: Jotem_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 1e05e7cf5f5be6146bd9dd1025e94e24
+    - name: Jotem_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 306659636613a61478396f8a71209c20
+    - name: Jotem_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 6a73f78a608724240b11dcb8cb13a497
+    - name: Jotem_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 49f88de8664d22c4799dd67ca9b4f721
+    - name: Jotem_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 9d836336555209042b80703ade08d9a9
+    - name: Jotem_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 2ea5e2693b6c95949b5da79f443153ad
+    - name: Jotem_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 60e1c58b2867fbb4e83d49c556f42af1
+    - name: Jotem_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 38
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 6a2f6b0a67c2aa345a223fad10bf62ae
+    - name: Jotem_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 38
+        y: -2
+        width: 47
+        height: 36
+      spriteId: 14f2801ed76743447b6944fac22b1f02
+    - name: Jotem_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 38
+        y: -2
+        width: 47
+        height: 36
+      spriteId: a7003f2b8818c7b4c80ad37ca57d1370
+    - name: Jotem_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 38
+        y: -2
+        width: 47
+        height: 36
+      spriteId: 20dc1794579bdc440a7cd0ec7cb8a385
+    - name: Jotem_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 37
+        y: 1
+        width: 48
+        height: 38
+      spriteId: 5bcd308a4773a8d458d3b08ae0b147dc
+    - name: Jotem_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 37
+        y: 1
+        width: 48
+        height: 38
+      spriteId: 38a85b018370edb4ab1e10c402bf2f49
+    - name: Jotem_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 37
+        y: 1
+        width: 48
+        height: 38
+      spriteId: 8d5c31342dbce454a95b7accb385585e
+    - name: Jotem_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 37
+        y: 1
+        width: 48
+        height: 38
+      spriteId: 8fbd37c1b90cda848ae2f11ea17947f2
+    - name: Jotem_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 37
+        y: 1
+        width: 48
+        height: 38
+      spriteId: ed82e446d2d450e428cc16bb90fb2b57
+    - name: Jotem_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 722ddb56f2c629f478c9f1d147fafadb
+    - name: Jotem_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 6f06daa06d55598479aca90da1bdee48
+    - name: Jotem_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 3b93fc2731ba373419fd614226d01f1f
+    - name: Jotem_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 0f46ab6bb3fbccd4da5026de7937e57c
+    - name: Jotem_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 37
+      spriteId: ab8e83c84c922b542a5daef3b287e3d5
+    - name: Jotem_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 40
+      spriteId: f96a69cc03cfd214e9ae9331a7f2f5a4
+    - name: Jotem_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 43
+      spriteId: f6eb8531beaf82a4b996114094c083fe
+    - name: Jotem_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: f89e8b5daddb8ef419d6cf993f565cb6
+    - name: Jotem_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: bc496e2635e4fc94faa499498774618a
+    - name: Jotem_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: e92ed1c898b846247a646e0c7df6ebd1
+    - name: Jotem_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 2b1fdff45cc11b24a9e4ab5aa93676a5
+    - name: Jotem_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 804fb0c39d7cfaa4280becc4df0141ee
+    - name: Jotem_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 39
+        y: 0
+        width: 56
+        height: 43
+      spriteId: b81f1bc8df071b94b91002eb1f7aa8b3
+    - name: Jotem_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 44
+        y: 0
+        width: 84
+        height: 46
+      spriteId: c8a433080f64cf241b4329148f940abb
+    - name: Jotem_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 00bc3387a80bf964d8d0cb62d4cf690d
+    - name: Jotem_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 155fd84a25bddef44b47e5b80a300bba
+    - name: Jotem_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 36
+        y: 0
+        width: 48
+        height: 35
+      spriteId: 86d899fa26b82bd43b6c17ca4ceab773
+    - name: Jotem_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 32
+      spriteId: b63a5360859f5cb47b5cfec5da782b62
+    - name: Jotem_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 36
+        y: 0
+        width: 48
+        height: 31
+      spriteId: 943add73fdd30e242949351af4c8cba3
+    - name: Jotem_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 32
+      spriteId: 255f29d4690b9f64dba850d4add1ad94
+    - name: Jotem_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 60321eff3b284af4bba19e81ed7bc287
+    - name: Jotem_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: e499b2cce9e49ee4db4945adfaf3a91d
+    - name: Jotem_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 317be6d942d22404f8df14aab068d23a
+    - name: Jotem_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 5b8690b1c238a0f4c82b17ee9793f77d
+    - name: Jotem_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 0eb4730c490a13b4382edb49cb373d59
+    - name: Jotem_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 38349bdffb1815646ad7c066b003b220
+    - name: Jotem_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 37
+        y: 0
+        width: 54
+        height: 34
+      spriteId: 3300a2aa211efd746a261d6555730a59
+    - name: Jotem_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 37
+        y: 0
+        width: 53
+        height: 34
+      spriteId: c2aa893a3fe7b0a41b8feb32068206ee
+    - name: Jotem_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 37
+        y: 0
+        width: 53
+        height: 34
+      spriteId: 973a73722da66294bbfd8352330f169a
+    - name: Jotem_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 37
+        y: 0
+        width: 51
+        height: 34
+      spriteId: 8a841eaa05d3d8743b9f5658989b9a8e
+    - name: Jotem_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 37
+        y: 0
+        width: 55
+        height: 34
+      spriteId: 33a10c85bbb07054a9cc07b82b7c8405
+    - name: Jotem_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 37
+        y: 0
+        width: 64
+        height: 34
+      spriteId: 7b88c06564423e541878b19d41d09b79
+    - name: Jotem_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 37
+        y: 0
+        width: 62
+        height: 37
+      spriteId: 3b32e55b2055e844988f3d08e25c6a15
+    - name: Jotem_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 37
+        y: 0
+        width: 65
+        height: 35
+      spriteId: 497b9adcbc976954c80d77c677bbc9d5
+    - name: Jotem_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 37
+        y: 0
+        width: 64
+        height: 35
+      spriteId: a6d8a1ea36946874e9c9473f0c2c0402
+    - name: Jotem_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 37
+        y: 0
+        width: 64
+        height: 35
+      spriteId: 92aa85968d6070641a02b028a68f000a
+    - name: Jotem_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 37
+        y: 0
+        width: 64
+        height: 35
+      spriteId: e902f8fd9f534284189244f43d5a3f3a
+    - name: Jotem_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 37
+        y: 0
+        width: 63
+        height: 39
+      spriteId: ca9bd0c6f99e2604a98fc49362e58f5c
+    - name: Jotem_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 37
+        y: 0
+        width: 65
+        height: 39
+      spriteId: 8ab8f518472d1bc43834ed644c4da45f
+    - name: Jotem_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 37
+        y: 0
+        width: 65
+        height: 36
+      spriteId: e0656bf7703ff0f458e132fa1d5bc501
+    - name: Jotem_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 37
+        y: 0
+        width: 65
+        height: 34
+      spriteId: a905083cfb118744bb791586c686d466
+    - name: Jotem_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 37
+        y: 0
+        width: 67
+        height: 56
+      spriteId: d9be73cb94b598744bd099aef3780c28
+    - name: Jotem_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 32
+        y: 0
+        width: 80
+        height: 63
+      spriteId: 4733002c0a4f76a4f833a677ab4d6e59
+    - name: Jotem_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 37
+        y: 0
+        width: 64
+        height: 41
+      spriteId: 5c82c6d6eb8c3fc43bd870bdbfd77f2c
+    - name: Jotem_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 8feefd94baed21b41a671dde062f363d
+    - name: Jotem_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 40
+      spriteId: a7ea98a053e1995498b5513a6542ab08
+    - name: Jotem_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 40
+      spriteId: 51dd917a9b172da4395fd6a3def69189
+    - name: Jotem_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 41
+      spriteId: ddf985249b686394b807d4f44e4c8a1a
+    - name: Jotem_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 41
+      spriteId: ffdae34fe212cc14e98f99f86fa96479
+    - name: Jotem_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 41
+      spriteId: f12de9fa3aae89f449273e650f28b270
+    - name: Jotem_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 50
+        y: 0
+        width: 26
+        height: 41
+      spriteId: fedec5d00aff8f942936d572ae31c016
+    - name: Jotem_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 52
+        y: 0
+        width: 25
+        height: 40
+      spriteId: b1fb74ea680b86149ac5df8a82af8362
+    - name: Jotem_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 52
+        y: 0
+        width: 23
+        height: 39
+      spriteId: df9778397ecb92e448925b21d3d329ed
+    - name: Jotem_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 52
+        y: 0
+        width: 24
+        height: 38
+      spriteId: 4f8758ea6627fa94d863ed1b762987c4
+    - name: Jotem_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 51
+        y: 0
+        width: 26
+        height: 39
+      spriteId: 4eba71714f00d7742ab18bac3eef7198
+    - name: Jotem_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 50
+        y: 0
+        width: 28
+        height: 40
+      spriteId: 2a2e1629d96f5374b84dfd9857a854b3
+    - name: Jotem_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 51
+        y: 0
+        width: 26
+        height: 39
+      spriteId: f660417bac37f4045aae469d9e44a76c
+    - name: Jotem_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 52
+        y: 0
+        width: 24
+        height: 38
+      spriteId: d2b8d69133ac01046a5cee70485702ee
+    - name: Jotem_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 52
+        y: 0
+        width: 23
+        height: 39
+      spriteId: e18e50ba5897018448e8a5c1978d58f1
+    - name: Jotem_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 45
+      spriteId: aeb67fdefdbf89f45b961f92703f1754
+    - name: Jotem_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 45
+      spriteId: 3841c0c5d98fadb45bca2ee9037ecba5
+    - name: Jotem_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 46
+      spriteId: eafcc5fef8081b948ba43471a2994995
+    - name: Jotem_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 47
+      spriteId: ae6dfb304b34a8342840bbe54b830f01
+    - name: Jotem_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 48
+      spriteId: 18cf4b6d695bfd04f877d0e26e17553a
+    - name: Jotem_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 43
+        y: 0
+        width: 36
+        height: 48
+      spriteId: 8a62516aff887a64f904301baa42ab85
+    - name: Jotem_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 48
+        y: 0
+        width: 81
+        height: 32
+      spriteId: 43a475a4bc21e1a4bb6225d674dc5583
+    - name: Jotem_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 37
+        y: 0
+        width: 48
+        height: 34
+      spriteId: 6bf9a8480ab796a4290daf0782e1cd15
+    - name: Jotem_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 33
+        y: 0
+        width: 48
+        height: 33
+      spriteId: ebbf5b1d78d62164a9f0bb00d1129b5a
+    - name: Jotem_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 24
+        y: 0
+        width: 55
+        height: 27
+      spriteId: 6fc9a025823bf994b93a4487f8f0ca85
+    - name: Jotem_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 23
+        y: 0
+        width: 65
+        height: 15
+      spriteId: 607085d68b35e1c4f92c78983a86151a
+    - name: Jotem_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 23
+        y: 0
+        width: 65
+        height: 17
+      spriteId: a1d1a5a3a4ecf244094ba63ce53c0a2a
+    - name: Jotem_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 44
+        y: 0
+        width: 75
+        height: 38
+      spriteId: 99b0c2f74fa51cd4d95e736235a1c919
+    - name: Jotem_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 20
+        y: 0
+        width: 58
+        height: 32
+      spriteId: 97e2fe5c3ab04af4d8f88d66a128df8a
+    - name: Jotem_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 20
+        y: 0
+        width: 58
+        height: 32
+      spriteId: 3babc9fcc9c18174f9e1be566debde11
+    - name: Jotem_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 30
+        y: 0
+        width: 53
+        height: 32
+      spriteId: 3c1529d6d679848448fdb3732d3c25bd
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}

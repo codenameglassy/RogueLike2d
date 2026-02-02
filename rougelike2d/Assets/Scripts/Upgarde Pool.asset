@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e5dd936bd7c6b4ca7595755a520352, type: 3}
+  m_Name: Upgarde Pool
+  m_EditorClassIdentifier: 
+  upgrades:
+  - {fileID: 11400000, guid: c496f00b4ff22bf408aa4cf6042338c8, type: 2}
+  - {fileID: 11400000, guid: c496f00b4ff22bf408aa4cf6042338c8, type: 2}
+  - {fileID: 11400000, guid: 73b114ed39f31534dbb07ffbb4ab5315, type: 2}
