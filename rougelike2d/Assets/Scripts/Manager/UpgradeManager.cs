@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class UpgradeManager : MonoBehaviour
     public float legendaryWeight = 0.1f;
 
     private List<UpgradeSO> runtimePool = new List<UpgradeSO>();
+    
 
     private void Awake()
     {
@@ -46,7 +48,12 @@ public class UpgradeManager : MonoBehaviour
         choiceLeft.Setup(currentChoices[0], this);
         choiceRight.Setup(currentChoices[1], this);
 
+        // set game pause
+        GameManager.instance.PauseGame();
+
         Time.timeScale = 0f;
+        
+        
     }
 
     public void SelectUpgrade(UpgradeSO upgrade)
@@ -54,6 +61,9 @@ public class UpgradeManager : MonoBehaviour
         upgrade.Apply(player);
         upgradePanel.SetActive(false);
         Time.timeScale = 1f;
+
+        // set game resume
+        GameManager.instance.ResumeGame();
     }
 
     private List<UpgradeSO> GetRandomUpgrades(int count)

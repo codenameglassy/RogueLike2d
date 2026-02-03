@@ -26,13 +26,19 @@ public class PlayerHealthComponent : HealthComponent
 
         sr.material = playerEntity.data.whiteMat;
         Invoke("ResetMat", .14f);
-        hurtFeedback.PlayFeedbacks();
+
+        if (!GameManager.instance.IsGamePaused())
+        {
+            hurtFeedback.PlayFeedbacks();
+        }
+      
         UpdateHealthBar();
 
         if(GetCurrentHealth() <= 0)
         {
             GameOver();
         }
+
     }
 
     void UpdateHealthBar()

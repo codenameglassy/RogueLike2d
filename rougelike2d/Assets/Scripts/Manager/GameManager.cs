@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [Header("UI Elements")]
     public CanvasGroup fadeImg;
 
+    private bool isGamePaused = false;
 
     private void Awake()
     {
@@ -86,4 +87,23 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+
+    #region Game Play
+
+    public bool IsGamePaused()
+    {
+        return isGamePaused;
+    }
+
+    public void ResumeGame()
+    {
+        isGamePaused = false;
+    }
+
+    public void PauseGame()
+    {
+        isGamePaused = true;
+    }
+
+    #endregion
 }

@@ -76,8 +76,14 @@ public class PlayerAttackComponent : MonoBehaviour
         hitinfoDown.Length >= 1 ||
         hitinfoLeft.Length >= 1)
         {
-            Debug.Log("Hit something");
-            attackHitFeedback.PlayFeedbacks();
+            if (!GameManager.instance.IsGamePaused())
+            {
+                Debug.Log("Hit something");
+                attackHitFeedback.PlayFeedbacks();
+            }
+                 
+            
+           
         }
 
         if (PlayerStats.instance.HasPlayerAirBlastUpgarde())
