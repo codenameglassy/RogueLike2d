@@ -6,6 +6,7 @@ public class EnemyEntity : MonoBehaviour
 {
     [Header("Components")]
     public Animator anim;
+    public SpriteRenderer sr;
     public EnemyData data;
     public Rigidbody2D rb;
     public Transform player;
@@ -78,7 +79,8 @@ public class EnemyEntity : MonoBehaviour
 
         Vector3 scale = transform.localScale;
         scale.x *= -1;
-        transform.localScale = scale;
+        //transform.localScale = scale;
+        sr.flipX = isFacingRight;
     }
 
 

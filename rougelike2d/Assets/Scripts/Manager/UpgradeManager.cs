@@ -25,9 +25,16 @@ public class UpgradeManager : MonoBehaviour
     public float rareWeight = 0.3f;
     public float legendaryWeight = 0.1f;
 
+    private List<UpgradeSO> runtimePool = new List<UpgradeSO>();
+
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        runtimePool = new List<UpgradeSO>(upgradePool.upgrades);
     }
 
     public void ShowUpgradeChoices()
@@ -39,7 +46,7 @@ public class UpgradeManager : MonoBehaviour
         choiceLeft.Setup(currentChoices[0], this);
         choiceRight.Setup(currentChoices[1], this);
 
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0f;
     }
 
     public void SelectUpgrade(UpgradeSO upgrade)
@@ -51,7 +58,9 @@ public class UpgradeManager : MonoBehaviour
 
     private List<UpgradeSO> GetRandomUpgrades(int count)
     {
-        List<UpgradeSO> pool = new List<UpgradeSO>(upgradePool.upgrades);
+        //List<UpgradeSO> pool = new List<UpgradeSO>(upgradePool.upgrades);
+
+        List<UpgradeSO> pool = new List<UpgradeSO>(runtimePool);
         List<UpgradeSO> result = new List<UpgradeSO>();
 
         for (int i = 0; i < count; i++)
@@ -95,5 +104,10 @@ public class UpgradeManager : MonoBehaviour
             UpgradeRarity.Legendary => legendaryWeight,
             _ => 1f
         };
+    }
+
+    public void RemoveUpgradeFromRunTimePool(UpgradeSO _upgardeSo)
+    {
+        runtimePool.Remove(_upgardeSo);
     }
 }

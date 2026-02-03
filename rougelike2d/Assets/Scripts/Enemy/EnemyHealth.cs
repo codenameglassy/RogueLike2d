@@ -10,9 +10,12 @@ public class EnemyHealth : HealthComponent
     [Header("Components")]
     public EnemyEntity entity;
     public Rigidbody2D rb;
-    public GameObject deathVfx;
     [SerializeField]private EnemyData data;
-   
+
+    [Header("HealthBar")]
+    public Transform fill;
+
+
     public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
     {
         base.RecieveDamage(attacker, damageAmt, direction);
@@ -22,14 +25,21 @@ public class EnemyHealth : HealthComponent
         sr.material = entity.data.whiteMat;
         Invoke("ResetMat", .14f);
         ApplyKnockback(direction);
+        UpdateBar();
 
-        if(GetCurrentHealth() <= 0)
+        if (GetCurrentHealth() <= 0)
         {
-            Instantiate(deathVfx, transform.position, Quaternion.identity);
-            GameManager.instance.RemoveEnemy(this.transform);
-            gameObject.SetActive(false);
+            EnemyKilled();
         }
         
+    }
+
+    void EnemyKilled()
+    {
+        Instantiate(data.deathVfx, transform.position, Quaternion.identity);
+        GameManager.instance.RemoveEnemy(this.transform);
+        XpManager.instance.AddXp(data.xpToGive);
+        gameObject.SetActive(false);
     }
 
     public void ApplyKnockback(Vector2 attackerPosition)
@@ -49,5 +59,11 @@ public class EnemyHealth : HealthComponent
         yield return new WaitForSeconds(data.knockbackDuration);
         rb.velocity = Vector2.zero;
         isKnocked = false;
+    }
+
+    void UpdateBar()
+    {
+        float percent = GetCurrentHealth() / maxHealth;
+        fill.localScale = new Vector3(percent, 1f, 1f);
     }
 }

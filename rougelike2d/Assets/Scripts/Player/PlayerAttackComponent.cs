@@ -27,6 +27,10 @@ public class PlayerAttackComponent : MonoBehaviour
         Collider2D[] hitinfoUp = Physics2D.OverlapCircleAll(attackPointUp.position, data.attackRange, data.damageableLayer);
         Collider2D[] hitinfoDown = Physics2D.OverlapCircleAll(attackPointDown.position, data.attackRange, data.damageableLayer);
 
+        float currentDamage = data.attackDamage + PlayerStats.instance.GetPlayerAttackPower();
+        currentDamage = CalculateDamage((int)currentDamage);
+        Debug.Log(currentDamage + " Dealing damage.");
+
         switch (movementComponent.IsFacingRight())
         {
             case true:
@@ -34,7 +38,7 @@ public class PlayerAttackComponent : MonoBehaviour
                 {
                     for (int i = 0; i < hitinfoRight.Length; i++)
                     {
-                        hitinfoRight[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                        hitinfoRight[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
                     }
                 }
                 break;
@@ -44,7 +48,7 @@ public class PlayerAttackComponent : MonoBehaviour
                 {
                     for (int i = 0; i < hitinfoLeft.Length; i++)
                     {
-                        hitinfoLeft[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                        hitinfoLeft[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
                     }
                 }
 
@@ -55,7 +59,7 @@ public class PlayerAttackComponent : MonoBehaviour
         {
             for (int i = 0; i < hitinfoUp.Length; i++)
             {
-                hitinfoUp[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                hitinfoUp[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
             }
         }
 
@@ -63,7 +67,7 @@ public class PlayerAttackComponent : MonoBehaviour
         {
             for (int i = 0; i < hitinfoDown.Length; i++)
             {
-                hitinfoDown[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                hitinfoDown[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
             }
         }
 
@@ -128,5 +132,22 @@ public class PlayerAttackComponent : MonoBehaviour
                 Gizmos.DrawWireSphere(attackPointLeft.position, data.attackRange);
                 break;
         }
+    }
+
+    // Cirt Hit
+
+    private float critMultiplier = 2f;
+
+    public int CalculateDamage(int baseDamage)
+    {
+        bool isCrit = Random.value < (PlayerStats.instance.GetPlayerCritChance() / 100f);
+
+        if (isCrit)
+        {
+            Debug.Log("CRITICAL HIT!");
+            return Mathf.RoundToInt(baseDamage * critMultiplier);
+        }
+
+        return baseDamage;
     }
 }

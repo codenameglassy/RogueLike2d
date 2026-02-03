@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats instance;
 
     private float currentPlayerAttackPower = 0;
-    private float currentPlayerCritChange = 0;
+    private float currentPlayerCritChance = 0;
 
     public GameObject homingMissile;
     private bool hasPlayerAirBlastUpgrade = false;
@@ -32,7 +32,7 @@ public class PlayerStats : MonoBehaviour
     }
     public void IncreasePlayerCritChance(float increaseAmt)
     {
-        currentPlayerCritChange += increaseAmt;
+        currentPlayerCritChance += increaseAmt;
     }
 
     #region Value Getter
@@ -40,6 +40,16 @@ public class PlayerStats : MonoBehaviour
     public bool HasPlayerAirBlastUpgarde()
     {
         return hasPlayerAirBlastUpgrade;
+    }
+
+    public float GetPlayerAttackPower()
+    {
+        return currentPlayerAttackPower;
+    }
+
+    public float GetPlayerCritChance()
+    {
+        return currentPlayerCritChance;
     }
 
     #endregion

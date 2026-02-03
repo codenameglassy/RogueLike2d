@@ -9,5 +9,7 @@ public class UnlockAirBlastUpgrade : UpgradeSO
     public override void Apply(GameObject player)
     {
         PlayerStats.instance.UnlockAirBlast();
+
+        UpgradeManager.instance.RemoveUpgradeFromRunTimePool(this);
     }
 }
