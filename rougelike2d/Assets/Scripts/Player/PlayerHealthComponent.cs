@@ -16,7 +16,7 @@ public class PlayerHealthComponent : HealthComponent
     public override void Start()
     {
         base.Start();
-
+        SetCurrentHealth(playerEntity.data.maxHealth);
         UpdateHealthBar();
     }
 
@@ -39,7 +39,7 @@ public class PlayerHealthComponent : HealthComponent
     {
         if (fillImage != null)
         {
-            fillImage.fillAmount = GetCurrentHealth() / maxHealth;
+            fillImage.fillAmount = GetCurrentHealth() / playerEntity.data.maxHealth;
         }
     }
 

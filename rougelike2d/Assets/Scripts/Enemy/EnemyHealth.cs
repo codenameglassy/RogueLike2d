@@ -15,6 +15,12 @@ public class EnemyHealth : HealthComponent
     [Header("HealthBar")]
     public Transform fill;
 
+    public override void Start()
+    {
+        base.Start();
+        SetCurrentHealth(data.maxHealth);
+    }
+
 
     public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
     {
@@ -63,7 +69,7 @@ public class EnemyHealth : HealthComponent
 
     void UpdateBar()
     {
-        float percent = GetCurrentHealth() / maxHealth;
+        float percent = GetCurrentHealth() / data.maxHealth;
         fill.localScale = new Vector3(percent, 1f, 1f);
     }
 }

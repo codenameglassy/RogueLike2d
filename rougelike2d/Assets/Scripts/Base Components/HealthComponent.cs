@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthComponent : MonoBehaviour, IDamageable
 {
-    public float maxHealth;
+   
     private float currentHealth;
 
     public SpriteRenderer sr;
@@ -14,7 +14,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
     public virtual void Start()
     {
         defMat = sr.material;
-        currentHealth = maxHealth;
+        
     }
 
     // Update is called once per frame
@@ -38,5 +38,9 @@ public class HealthComponent : MonoBehaviour, IDamageable
         sr.material = defMat;
     }
 
+    public void SetCurrentHealth(float _newHealth)
+    {
+        currentHealth = _newHealth;
+    }
 
 }

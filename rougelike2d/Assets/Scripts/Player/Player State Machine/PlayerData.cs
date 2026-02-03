@@ -5,6 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "newPlayerEntityData", menuName = "EntityData/Player/PlayerData")]
 public class PlayerData : ScriptableObject
 {
+
+    [Header("Health")]
+    public float maxHealth;
+
     [Header("Attack")]
     public float attackTime;
     public float attackRange;
@@ -15,7 +19,6 @@ public class PlayerData : ScriptableObject
     [Header("Vfx")]
     public GameObject attackVfx;
     public Material whiteMat;
-
 
     [Header("Projectiles")]
     public GameObject basicProjectile;

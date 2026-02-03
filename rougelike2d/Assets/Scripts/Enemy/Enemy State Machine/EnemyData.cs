@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class EnemyData : ScriptableObject
 {
+    [Header("Health")]
+    public float maxHealth;
+
+    [Header("Movement")]
+    public float moveSpeed = 3f;
+
     [Header("Hurt")]
     public float hurtTime;
     public Material whiteMat;

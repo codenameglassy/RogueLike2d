@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -12,9 +13,19 @@ public class PlayerStats : MonoBehaviour
     public GameObject homingMissile;
     private bool hasPlayerAirBlastUpgrade = false;
 
+    [Header("UI-Elements")]
+    public TextMeshProUGUI apText;
+    public TextMeshProUGUI critText;
+
+
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        UpdateUI();
     }
 
     public void UnlockHomingMissile()
@@ -29,11 +40,22 @@ public class PlayerStats : MonoBehaviour
     public void IncreasePlayerAttackPower(float increaseAmt)
     {
         currentPlayerAttackPower += increaseAmt;
+        UpdateUI();
     }
     public void IncreasePlayerCritChance(float increaseAmt)
     {
         currentPlayerCritChance += increaseAmt;
+        UpdateUI();
     }
+
+    #region UI
+
+    public void UpdateUI()
+    {
+        apText.text = "AP: " + currentPlayerAttackPower;
+        critText.text = "Crit-Chance: " + currentPlayerCritChance;
+    }
+    #endregion
 
     #region Value Getter
 

@@ -16,9 +16,7 @@ public class EnemyEntity : MonoBehaviour
     public EnemyIdleState idleState { get; private set; }
     public EnemyHurtState hurtState { get; private set; }
 
-    [Header("Movement")]
-    public float moveSpeed = 3f;
-
+  
     
 
     private void Awake()
@@ -28,7 +26,7 @@ public class EnemyEntity : MonoBehaviour
     private void Start()
     {
         idleState = new EnemyIdleState(this, stateMachine, "Idle", data);
-        hurtState = new EnemyHurtState(this, stateMachine, "Hurt", data);
+        hurtState = new EnemyHurtState(this, stateMachine, "Idle", data);
 
         stateMachine.Initialize(idleState);
 
@@ -55,7 +53,7 @@ public class EnemyEntity : MonoBehaviour
 
         CheckMovementDirection(moveDir);
 
-        rb.MovePosition(rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveDir * data.moveSpeed * Time.fixedDeltaTime);
     }
 
     public void StopMovement()

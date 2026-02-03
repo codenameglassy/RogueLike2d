@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7e72eec2b6dde458082b5a4511dfa4, type: 3}
   m_Name: newPlayerEntityData
   m_EditorClassIdentifier: 
+  maxHealth: 100
   attackTime: 0.25
   attackRange: 1
   attackDamage: 10

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f380db30f2b15754ea6f5781d4ae9d1d, type: 3}
+  m_Name: BatData
+  m_EditorClassIdentifier: 
+  maxHealth: 80
+  moveSpeed: 3
+  hurtTime: 1
+  whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
+  deathVfx: {fileID: 2102239140665623742, guid: fc6222d850acca4499e1569549b03ddb, type: 3}
+  attackDamage: 10
+  attackRange: 1.5
+  attackCoolDown: 0.8
+  damageableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  knockbackForce: 15
+  knockbackDuration: 0.15
+  xpToGive: 20

@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f380db30f2b15754ea6f5781d4ae9d1d, type: 3}
-  m_Name: newEnemyEntityData
+  m_Name: SkeletonData
   m_EditorClassIdentifier: 
-  hurtTime: 1
+  maxHealth: 140
+  moveSpeed: 1.4
+  hurtTime: 1.5
   whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
   deathVfx: {fileID: 2102239140665623742, guid: fc6222d850acca4499e1569549b03ddb, type: 3}
-  attackDamage: 10
+  attackDamage: 20
   attackRange: 1.5
   attackCoolDown: 0.8
   damageableLayer:
     serializedVersion: 2
     m_Bits: 64
-  knockbackForce: 15
+  knockbackForce: 9
   knockbackDuration: 0.15
-  xpToGive: 20
+  xpToGive: 30
