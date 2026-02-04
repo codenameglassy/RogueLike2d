@@ -2313,6 +2313,10 @@ MonoBehaviour:
     cost: 3
     weight: 30
     minDifficulty: 60
+  - prefab: {fileID: 2445706423459275394, guid: a35d61eb80942724eac4cc75c223bd8a, type: 3}
+    cost: 4
+    weight: 20
+    minDifficulty: 100
 --- !u!4 &503687164
 Transform:
   m_ObjectHideFlags: 0

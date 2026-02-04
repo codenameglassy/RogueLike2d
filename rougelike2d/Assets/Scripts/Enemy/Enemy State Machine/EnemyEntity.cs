@@ -42,6 +42,8 @@ public class EnemyEntity : MonoBehaviour
         GameManager.instance.AddEnemy(this.transform);
         player = GameManager.instance.player;
 
+       
+
     }
 
     public virtual void Update()
@@ -57,13 +59,13 @@ public class EnemyEntity : MonoBehaviour
     public void ChasePlayer()
     {
         if (!player) return;
-
-        if (GameManager.instance.IsGamePaused())
-            return;
+        if (GameManager.instance.IsGamePaused()) return;
 
         Vector2 moveDir = (player.position - transform.position).normalized;
 
-        CheckMovementDirection(moveDir);
+        // Flip sprite based on movement direction
+        if (moveDir.x != 0)
+            sr.flipX = moveDir.x < 0;
 
         rb.MovePosition(rb.position + moveDir * data.moveSpeed * Time.fixedDeltaTime);
     }
@@ -71,26 +73,6 @@ public class EnemyEntity : MonoBehaviour
     public void StopMovement()
     {
         rb.velocity = Vector2.zero;
-    }
-
-    private bool isFacingRight = true;
-
-    private void CheckMovementDirection(Vector2 moveDir)
-    {
-        if (moveDir.x > 0 && !isFacingRight)
-            Flip();
-        else if (moveDir.x < 0 && isFacingRight)
-            Flip();
-    }
-
-    private void Flip()
-    {
-        isFacingRight = !isFacingRight;
-
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        //transform.localScale = scale;
-        sr.flipX = isFacingRight;
     }
 
     private void OnGameStateChanged(GameState newGameState)
