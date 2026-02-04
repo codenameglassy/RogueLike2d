@@ -51,7 +51,7 @@ public class UpgradeManager : MonoBehaviour
         // set game pause
         GameManager.instance.PauseGame();
 
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         
         
     }
@@ -60,7 +60,7 @@ public class UpgradeManager : MonoBehaviour
     {
         upgrade.Apply(player);
         upgradePanel.SetActive(false);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
 
         // set game resume
         GameManager.instance.ResumeGame();

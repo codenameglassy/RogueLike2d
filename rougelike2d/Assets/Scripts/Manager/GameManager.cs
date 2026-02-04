@@ -98,11 +98,17 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         isGamePaused = false;
+
+        GameState newGameState = GameState.Gameplay;
+        GameStateManager.Instance.SetState(newGameState);
     }
 
     public void PauseGame()
     {
         isGamePaused = true;
+
+        GameState newGameState = GameState.Paused;
+        GameStateManager.Instance.SetState(newGameState);
     }
 
     #endregion

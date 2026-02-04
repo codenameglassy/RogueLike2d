@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAttackComponent : MonoBehaviour
 {
     [Header("Combat")]
-    public Transform player;
+    private Transform player;
     private float attackTimer;
     public Transform attackPoint;
 
@@ -15,6 +15,7 @@ public class EnemyAttackComponent : MonoBehaviour
 
     private void Start()
     {
+        player = GameManager.instance.player;
         attackTimer = data.attackCoolDown;
     }
 

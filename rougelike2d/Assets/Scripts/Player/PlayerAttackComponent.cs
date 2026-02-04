@@ -19,6 +19,17 @@ public class PlayerAttackComponent : MonoBehaviour
 
     [Header("ShootPoints")]
     public List<Transform> shootPoints = new List<Transform>();
+    private void Awake()
+    {
+
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
+
+    }
 
     public void Attack()
     {
@@ -155,5 +166,11 @@ public class PlayerAttackComponent : MonoBehaviour
         }
 
         return baseDamage;
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+
     }
 }

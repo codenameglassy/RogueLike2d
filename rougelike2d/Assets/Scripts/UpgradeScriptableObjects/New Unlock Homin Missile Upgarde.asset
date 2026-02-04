@@ -15,4 +15,4 @@ MonoBehaviour:
   upgradeName: Homing Missile
   description: Chases your enemy & deal AOE damages.
   icon: {fileID: 21300000, guid: 1ebf044eb161c9047a2fcc29c26560b2, type: 3}
-  rarity: 2
+  rarity: 3

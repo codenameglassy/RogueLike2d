@@ -9,19 +9,27 @@ public class EnemyEntity : MonoBehaviour
     public SpriteRenderer sr;
     public EnemyData data;
     public Rigidbody2D rb;
-    public Transform player;
     public EnemyAttackComponent attackComponent;
     public EnemyFiniteStateMachine stateMachine { get; private set; }
 
     public EnemyIdleState idleState { get; private set; }
     public EnemyHurtState hurtState { get; private set; }
 
-  
-    
+
+    private Transform player;
 
     private void Awake()
     {
+       
         stateMachine = new EnemyFiniteStateMachine();
+
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
+
     }
     private void Start()
     {
@@ -32,6 +40,7 @@ public class EnemyEntity : MonoBehaviour
 
         //init
         GameManager.instance.AddEnemy(this.transform);
+        player = GameManager.instance.player;
 
     }
 
@@ -48,6 +57,9 @@ public class EnemyEntity : MonoBehaviour
     public void ChasePlayer()
     {
         if (!player) return;
+
+        if (GameManager.instance.IsGamePaused())
+            return;
 
         Vector2 moveDir = (player.position - transform.position).normalized;
 
@@ -81,7 +93,10 @@ public class EnemyEntity : MonoBehaviour
         sr.flipX = isFacingRight;
     }
 
-
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
 
 
 }

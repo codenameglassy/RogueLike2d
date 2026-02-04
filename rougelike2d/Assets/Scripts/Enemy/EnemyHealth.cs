@@ -45,7 +45,9 @@ public class EnemyHealth : HealthComponent
         Instantiate(data.deathVfx, transform.position, Quaternion.identity);
         GameManager.instance.RemoveEnemy(this.transform);
         XpManager.instance.AddXp(data.xpToGive);
-        gameObject.SetActive(false);
+        KillTracker.instance.RegisterKill();
+        //gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     public void ApplyKnockback(Vector2 attackerPosition)

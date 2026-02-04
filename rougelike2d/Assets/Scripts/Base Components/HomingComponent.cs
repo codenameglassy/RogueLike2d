@@ -13,11 +13,18 @@ public class HomingComponent : MonoBehaviour
     private float timer;
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+    
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+    }
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
+
     }
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         GameManager.instance.AddUpgardedItem(this.gameObject);
     }
 
@@ -40,7 +47,12 @@ public class HomingComponent : MonoBehaviour
 
         for (int i = 0; i < hitInfo.Length; i++)
         {
-            hitInfo[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.projectileDamage, transform.position);
+            IDamageable damageable = hitInfo[i].GetComponent<IDamageable>();
+            if(damageable != null)
+            {
+                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
+            }
+            
         }
     }
 
@@ -65,5 +77,10 @@ public class HomingComponent : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, data.projectileHitRadius);
     }
-  
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+
+    }
 }

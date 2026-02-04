@@ -29,9 +29,9 @@ public class PlayerHealthComponent : HealthComponent
 
         if (!GameManager.instance.IsGamePaused())
         {
-            hurtFeedback.PlayFeedbacks();
+     
         }
-      
+        hurtFeedback.PlayFeedbacks();
         UpdateHealthBar();
 
         if(GetCurrentHealth() <= 0)
@@ -52,8 +52,13 @@ public class PlayerHealthComponent : HealthComponent
     void GameOver()
     {
         Debug.Log("Game Over");
+        // Disable any upgrades
         GameManager.instance.DisableUpgradedItems();
+        // Fade Out
         GameManager.instance.FadeOut();
+        // Pause Game
+        GameManager.instance.PauseGame();
+        // Disable Player
         gameObject.SetActive(false);
     }
 }

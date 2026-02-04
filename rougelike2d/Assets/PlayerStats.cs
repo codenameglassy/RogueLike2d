@@ -53,7 +53,7 @@ public class PlayerStats : MonoBehaviour
     public void UpdateUI()
     {
         apText.text = "AP: " + currentPlayerAttackPower;
-        critText.text = "Crit-Chance: " + currentPlayerCritChance;
+        critText.text = "Crit-Chance: " + currentPlayerCritChance + "%";
     }
     #endregion
 

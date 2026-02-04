@@ -9,6 +9,7 @@ public class PlayerEntity : MonoBehaviour
     public PlayerAttackComponent attackComponent;
     public Animator anim;
     public PlayerData data;
+    public Rigidbody2D rb;
 
     //[Header("Finite State Machine")]
     public PlayerFinisteStateMachine stateMachine { get; private set; }
@@ -22,12 +23,21 @@ public class PlayerEntity : MonoBehaviour
     private void Awake()
     {
         stateMachine = new PlayerFinisteStateMachine();
-        idleState = new PlayerIdleState(this, stateMachine, "Idle", data);
-        attackState = new PlayerAttackState(this, stateMachine, "Attack", data);
+
+
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
     }
 
     private void Start()
     {
+        idleState = new PlayerIdleState(this, stateMachine, "Idle", data);
+        attackState = new PlayerAttackState(this, stateMachine, "Attack", data);
+
         stateMachine.Initialize(idleState);
     }
 
@@ -46,5 +56,19 @@ public class PlayerEntity : MonoBehaviour
         Instantiate(data.attackVfx, attackVfxPoint.position, transform.rotation);
     }
 
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+
+        if(newGameState == GameState.Gameplay)
+        {
+            
+        }
+        else if(newGameState == GameState.Paused)
+        {
+            rb.velocity = Vector2.zero;
+            stateMachine.ChangeState(idleState);
+        } 
+    }
    
 }

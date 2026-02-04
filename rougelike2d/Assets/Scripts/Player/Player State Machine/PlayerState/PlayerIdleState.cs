@@ -26,7 +26,7 @@ public class PlayerIdleState : PlayerState
         base.LogicUpdate();
         entity.topDownMovement.HandleInput();
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0))
         {
             entity.stateMachine.ChangeState(entity.attackState);
         }
