@@ -221,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 6123783889414377646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.63, y: 0.19, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -307,9 +307,7 @@ MonoBehaviour:
   sr: {fileID: 656300443762558322}
   data: {fileID: 11400000, guid: 865e56fb797ceae4da2a993c724b7340, type: 2}
   rb: {fileID: 1102222602291382394}
-  player: {fileID: 0}
   attackComponent: {fileID: 8306402652405171215}
-  moveSpeed: 2
 --- !u!114 &1811855818446503812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,11 +320,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f928ff6128b6434f9183507260d29df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   sr: {fileID: 656300443762558322}
   entity: {fileID: 4194111523902917329}
   rb: {fileID: 1102222602291382394}
-  deathVfx: {fileID: 2102239140665623742, guid: fc6222d850acca4499e1569549b03ddb, type: 3}
   data: {fileID: 11400000, guid: 865e56fb797ceae4da2a993c724b7340, type: 2}
   fill: {fileID: 2933001212707216336}
 --- !u!114 &8306402652405171215
@@ -341,7 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618e4eafd901f6746aca62c84ecd4525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   attackPoint: {fileID: 5239531761635303941}
   data: {fileID: 11400000, guid: 865e56fb797ceae4da2a993c724b7340, type: 2}
 --- !u!1 &6392961705114439484

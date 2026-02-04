@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using MoreMountains.Feedbacks;
+using DG.Tweening;
 
 public class PlayerHealthComponent : HealthComponent
 {
     [Header("UI Elements")]
     public Image fillImage;
+    public CanvasGroup hurtImg;
+    private bool isHurtImg = false;
 
     [Header("Components")]
     public PlayerEntity playerEntity;
@@ -34,6 +37,7 @@ public class PlayerHealthComponent : HealthComponent
         }
         hurtFeedback.PlayFeedbacks();
         UpdateHealthBar();
+        StartCoroutine(HurtImgRoutine());
 
         if(GetCurrentHealth() <= 0)
         {
@@ -61,5 +65,20 @@ public class PlayerHealthComponent : HealthComponent
         GameManager.instance.PauseGame();
         // Disable Player
         gameObject.SetActive(false);
+    }
+
+    IEnumerator HurtImgRoutine()
+    {
+        if(isHurtImg == true)
+        {
+            yield break;
+        }
+        isHurtImg = true;
+
+        hurtImg.alpha = 1.0f;
+        hurtImg.DOFade(0.0f, .25f);
+        yield return new WaitForSeconds(.5f);
+
+        isHurtImg = false;
     }
 }

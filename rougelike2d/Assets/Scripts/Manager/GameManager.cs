@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         fadeImg.alpha = 1.0f;
         DelayedFadeIn();
-        
+        SoundManager.Instance.Play("Theme");
     }
 
 

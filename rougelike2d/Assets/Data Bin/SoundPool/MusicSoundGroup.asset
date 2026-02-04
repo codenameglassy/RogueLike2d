@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundItems:
   - soundName: Theme
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: bb36ab5e7256595448049b2b9f962fa9, type: 3}
     soundType: 1
     volume: 0.6
     minPitch: 1
