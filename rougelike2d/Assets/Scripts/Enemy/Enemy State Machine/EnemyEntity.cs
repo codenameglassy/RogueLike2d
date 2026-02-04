@@ -15,8 +15,17 @@ public class EnemyEntity : MonoBehaviour
     public EnemyIdleState idleState { get; private set; }
     public EnemyHurtState hurtState { get; private set; }
 
+    public EnemyRangeAttackState rangeAttackState { get; private set; }
+
 
     private Transform player;
+
+    public enum EnemyType
+    {
+        Melee,
+        Range
+    }
+    public EnemyType _enemyType;
 
     private void Awake()
     {
@@ -35,6 +44,11 @@ public class EnemyEntity : MonoBehaviour
     {
         idleState = new EnemyIdleState(this, stateMachine, "Idle", data);
         hurtState = new EnemyHurtState(this, stateMachine, "Idle", data);
+
+        if(_enemyType == EnemyType.Range)
+        {
+            rangeAttackState = new EnemyRangeAttackState(this, stateMachine, "RangeAttack", data);
+        }
 
         stateMachine.Initialize(idleState);
 
@@ -70,6 +84,27 @@ public class EnemyEntity : MonoBehaviour
         rb.MovePosition(rb.position + moveDir * data.moveSpeed * Time.fixedDeltaTime);
     }
 
+    public void ShootProjectile()
+    {
+        Vector2 dir = (player.position - transform.position).normalized;
+
+        GameObject proj = Instantiate(
+            data.enemyProjctile,
+            transform.position,
+            Quaternion.identity
+        );
+
+        proj.GetComponent<EnemyProjectileComponent>().Init(dir);
+
+    }
+
+    public bool IsPlayerInRangeAttackRange()
+    {
+        Collider2D hitInfo = Physics2D.OverlapCircle(transform.position, data.rangeAttackRange, data.damageableLayer);
+
+        return hitInfo;
+    }
+
     public void StopMovement()
     {
         rb.velocity = Vector2.zero;
@@ -78,6 +113,11 @@ public class EnemyEntity : MonoBehaviour
     private void OnGameStateChanged(GameState newGameState)
     {
         enabled = newGameState == GameState.Gameplay;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, data.rangeAttackRange);
     }
 
 

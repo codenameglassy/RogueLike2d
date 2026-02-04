@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
     private float currentPlayerAttackPower = 0;
     private float currentPlayerCritChance = 0;
 
+    [Header("Upgarde Prefabs")]
     public GameObject homingMissile;
     private bool hasPlayerAirBlastUpgrade = false;
 
@@ -17,6 +18,8 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI apText;
     public TextMeshProUGUI critText;
 
+    [Header("Player Component Reference")]
+    public PlayerHealthComponent playerHealthComponent;
 
     private void Awake()
     {
@@ -46,6 +49,11 @@ public class PlayerStats : MonoBehaviour
     {
         currentPlayerCritChance += increaseAmt;
         UpdateUI();
+    }
+
+    public void HealPlayer(float _healAmt)
+    {
+        playerHealthComponent.Heal(_healAmt);
     }
 
     #region UI

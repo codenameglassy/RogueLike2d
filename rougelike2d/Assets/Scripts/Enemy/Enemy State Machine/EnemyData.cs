@@ -30,4 +30,9 @@ public class EnemyData : ScriptableObject
     [Header("Xp")]
     public float xpToGive;
 
+    [Header("Range Attack")]
+    public float rangeAttackRange;
+    public float rangeAttackTime;
+    public GameObject enemyProjctile;
+
 }

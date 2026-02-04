@@ -15,6 +15,7 @@ public class PlayerHealthComponent : HealthComponent
     [Header("Components")]
     public PlayerEntity playerEntity;
     public MMF_Player hurtFeedback;
+    public PlayerData data;
 
     public override void Start()
     {
@@ -44,6 +45,21 @@ public class PlayerHealthComponent : HealthComponent
             GameOver();
         }
 
+    }
+
+    public void Heal(float healAmt)
+    {
+        float currentHealth = GetCurrentHealth();
+        float updatedHealth = currentHealth + healAmt;
+
+        if(updatedHealth >= data.maxHealth)
+        {
+            updatedHealth = data.maxHealth;
+        }
+
+        SetCurrentHealth(updatedHealth);
+        UpdateHealthBar();
+        Debug.Log("Player healed by " + healAmt);
     }
 
     void UpdateHealthBar()

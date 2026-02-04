@@ -23,6 +23,15 @@ public class EnemyIdleState : EnemyState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        if(entity._enemyType == EnemyEntity.EnemyType.Range)
+        {
+            if (entity.IsPlayerInRangeAttackRange())
+            {
+                entity.stateMachine.ChangeState(entity.rangeAttackState);
+            }
+        }
+      
     }
 
     public override void PhysicsUpdate()

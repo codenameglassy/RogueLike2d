@@ -10,19 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f380db30f2b15754ea6f5781d4ae9d1d, type: 3}
-  m_Name: SkeletonData
+  m_Name: WizardData
   m_EditorClassIdentifier: 
   maxHealth: 140
-  moveSpeed: 1.4
+  moveSpeed: 2.5
   hurtTime: 1.5
   whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
   deathVfx: {fileID: 2102239140665623742, guid: fc6222d850acca4499e1569549b03ddb, type: 3}
-  attackDamage: 20
+  attackDamage: 40
   attackRange: 1.5
-  attackCoolDown: 0.8
+  attackCoolDown: 0.7
   damageableLayer:
     serializedVersion: 2
     m_Bits: 64
-  knockbackForce: 9
+  knockbackForce: 6
   knockbackDuration: 0.15
-  xpToGive: 10
+  xpToGive: 35
+  rangeAttackRange: 8
+  rangeAttackTime: 2
+  enemyProjctile: {fileID: 4709532518203640089, guid: efd01baed3b0fa2499a585d669872460, type: 3}

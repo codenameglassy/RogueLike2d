@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f380db30f2b15754ea6f5781d4ae9d1d, type: 3}
   m_Name: BatData
   m_EditorClassIdentifier: 
-  maxHealth: 80
+  maxHealth: 40
   moveSpeed: 3
   hurtTime: 1
   whiteMat: {fileID: 2100000, guid: 13cf912859f8fd340bf8faaf4edf80e7, type: 2}
@@ -25,4 +25,4 @@ MonoBehaviour:
     m_Bits: 64
   knockbackForce: 15
   knockbackDuration: 0.15
-  xpToGive: 20
+  xpToGive: 5

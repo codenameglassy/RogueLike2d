@@ -34,10 +34,37 @@ public class EnemySpawner : MonoBehaviour
         if (!GameDirector.instance.CanSpend(enemy.cost))
             return;
 
-        Vector2 pos = GetSpawnPosition();
+        Vector2 pos = GetSpawnPosition(enemy);
         Instantiate(enemy.prefab, pos, Quaternion.identity);
 
         GameDirector.instance.Spend(enemy.cost);
+    }
+
+    Vector2 GetSpawnPosition(EnemySpawnData enemy)
+    {
+        Vector2 dir;
+
+        if (enemy.movementType == EnemyMovementType.Flying)
+        {
+            // Any direction
+            dir = Random.insideUnitCircle.normalized;
+        }
+        else
+        {
+            // Grounded: South, West, or East only
+            // South = (0, -1), West = (-1, 0), East = (1, 0)
+            Vector2[] allowedDirs =
+            {
+            Vector2.down,
+            Vector2.left,
+            Vector2.right
+        };
+
+            dir = allowedDirs[Random.Range(0, allowedDirs.Length)];
+        }
+
+        float dist = Random.Range(minDistance, spawnRadius);
+        return (Vector2)player.position + dir * dist;
     }
 
     EnemySpawnData GetEnemyByDifficulty()
