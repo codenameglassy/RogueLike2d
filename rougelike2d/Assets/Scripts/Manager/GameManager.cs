@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         fadeImg.alpha = 1.0f;
         DelayedFadeIn();
+        
     }
 
 

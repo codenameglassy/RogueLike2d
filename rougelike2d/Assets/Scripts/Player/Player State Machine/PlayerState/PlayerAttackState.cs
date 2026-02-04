@@ -15,6 +15,7 @@ public class PlayerAttackState : PlayerState
         base.Enter();
         Debug.Log("Player Enter Attack State");
         entity.topDownMovement.StopMovement();
+        SoundManager.Instance.Play("slash");
     }
 
     public override void Exit()

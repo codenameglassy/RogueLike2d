@@ -26,6 +26,7 @@ public class PlayerHealthComponent : HealthComponent
 
         sr.material = playerEntity.data.whiteMat;
         Invoke("ResetMat", .14f);
+        SoundManager.Instance.Play("hurt");
 
         if (!GameManager.instance.IsGamePaused())
         {

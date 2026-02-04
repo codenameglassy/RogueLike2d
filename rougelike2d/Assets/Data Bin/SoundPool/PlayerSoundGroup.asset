@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5308b4d37ae4b4c8cf793a5bcdba0b, type: 3}
+  m_Name: PlayerSoundGroup
+  m_EditorClassIdentifier: 
+  soundItems:
+  - soundName: slash
+    clips:
+    - {fileID: 8300000, guid: 4d75f909fa0554748b1944ccc7152443, type: 3}
+    - {fileID: 8300000, guid: a21f6c1c211c54844a6c4c05ac5c651b, type: 3}
+    - {fileID: 8300000, guid: 3b6f229c244755d4ca3b47745b5eaba6, type: 3}
+    - {fileID: 8300000, guid: a01e5119c4d424b45b760f57fb21cab7, type: 3}
+    soundType: 0
+    volume: 0.35
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: hit
+    clips:
+    - {fileID: 8300000, guid: 2e1e58618b02c004ea63e57919df2933, type: 3}
+    soundType: 0
+    volume: 0.5
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: hurt
+    clips:
+    - {fileID: 8300000, guid: ca7e829e9f876ea4a95a4edad95deb8e, type: 3}
+    - {fileID: 8300000, guid: 18f19d03b5eb5f6438c7255ed4adfd44, type: 3}
+    - {fileID: 8300000, guid: 1a197a36b1e09c44cb1d60ee4ceec601, type: 3}
+    - {fileID: 8300000, guid: 5f02d8d8a7340884fbac3973015477d1, type: 3}
+    - {fileID: 8300000, guid: 33ddda99f69e68f4282034c2b1614c56, type: 3}
+    - {fileID: 8300000, guid: 111ceb42462404e47baaa3d80b414351, type: 3}
+    soundType: 0
+    volume: 0.5
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0

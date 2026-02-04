@@ -42,6 +42,8 @@ public class PlayerAttackComponent : MonoBehaviour
         currentDamage = CalculateDamage((int)currentDamage);
         Debug.Log(currentDamage + " Dealing damage.");
 
+       
+
         switch (movementComponent.IsFacingRight())
         {
             case true:

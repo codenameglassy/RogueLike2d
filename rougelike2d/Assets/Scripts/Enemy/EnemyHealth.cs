@@ -27,12 +27,13 @@ public class EnemyHealth : HealthComponent
         base.RecieveDamage(attacker, damageAmt, direction);
 
         entity.stateMachine.ChangeState(entity.hurtState);
-
+       
+        SoundManager.Instance.PlayOneShotLimited("hit");
         sr.material = entity.data.whiteMat;
         Invoke("ResetMat", .14f);
         ApplyKnockback(direction);
         UpdateBar();
-
+  
         if (GetCurrentHealth() <= 0)
         {
             EnemyKilled();
