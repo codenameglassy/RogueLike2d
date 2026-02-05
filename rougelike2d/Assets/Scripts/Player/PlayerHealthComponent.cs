@@ -75,8 +75,8 @@ public class PlayerHealthComponent : HealthComponent
         Debug.Log("Game Over");
         // Disable any upgrades
         GameManager.instance.DisableUpgradedItems();
-        // Fade Out
-        GameManager.instance.FadeOut();
+        // Fade Out & Gameover
+        GameManager.instance.DelayedGameover();
         // Pause Game
         GameManager.instance.PauseGame();
         // Disable Player

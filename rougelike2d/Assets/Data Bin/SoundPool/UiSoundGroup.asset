@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b5308b4d37ae4b4c8cf793a5bcdba0b, type: 3}
-  m_Name: MusicSoundGroup
+  m_Name: UiSoundGroup
   m_EditorClassIdentifier: 
   soundItems:
-  - soundName: Theme
+  - soundName: button
     clips:
-    - {fileID: 8300000, guid: bb36ab5e7256595448049b2b9f962fa9, type: 3}
-    soundType: 1
-    volume: 0.35
-    minPitch: 1
-    maxPitch: 1
-    loop: 1
+    - {fileID: 8300000, guid: f06f4ba9147e82742ad906063878dafd, type: 3}
+    soundType: 0
+    volume: 1
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0

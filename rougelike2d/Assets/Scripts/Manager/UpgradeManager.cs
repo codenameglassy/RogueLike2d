@@ -61,7 +61,7 @@ public class UpgradeManager : MonoBehaviour
         upgrade.Apply(player);
         upgradePanel.SetActive(false);
         //Time.timeScale = 1f;
-
+        SoundManager.Instance.Play("button");
         // set game resume
         GameManager.instance.ResumeGame();
     }
