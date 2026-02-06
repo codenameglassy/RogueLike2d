@@ -5,10 +5,22 @@ using LootLocker.Requests;
 
 public class PlayerManager : MonoBehaviour
 {
-    public Leaderboard leaderboard;
-    private string playerID;
-
    
+    private string playerID;
+    public static PlayerManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +30,7 @@ public class PlayerManager : MonoBehaviour
     IEnumerator SetupRoutine()
     {
         yield return LoginRoutine();
-        yield return leaderboard.FetechLeaderboardRoutine();
-        yield return SetPlayerNameRoutine(); //set name
+        yield return Leaderboard.instance.FetechLeaderboardRoutine();
     }
 
     IEnumerator LoginRoutine()
@@ -55,13 +66,13 @@ public class PlayerManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("Failed to change name" + response.errorData);
+                Debug.Log("Failed to change name" + response.errorData.message);
                 //FindObjectOfType<ScreenLoader>().LoadScene("SampleScene");
             }
         });
     }
 
-    IEnumerator SetPlayerNameRoutine()
+    public IEnumerator SetPlayerNameRoutine()
     {
         bool done = false;
         string currentUsername = PlayerPrefs.GetString("InputFieldValue", playerID.ToString());
@@ -70,12 +81,12 @@ public class PlayerManager : MonoBehaviour
             if (response.success)
             {
                 Debug.Log("Sucessfully Set Player Name");
-
+                done = true;
             }
             else
             {
-                Debug.Log("Failed to change name" + response.errorData);
-
+                Debug.Log("Failed to change name" + response.errorData.message);
+                done = true;
             }
         });
         yield return new WaitWhile(() => done == false);

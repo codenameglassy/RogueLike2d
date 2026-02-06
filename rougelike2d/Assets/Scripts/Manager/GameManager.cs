@@ -137,6 +137,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Enum_Gameover()
     {
+        yield return PlayerManager.Instance.SetPlayerNameRoutine();
         yield return leaderboard.SubmitScoreRoutine(XpManager.instance.currentLevel);
         yield return leaderboard.FetechLeaderboardRoutine();
         yield return leaderboard.FetechPersonalScoreRoutine();

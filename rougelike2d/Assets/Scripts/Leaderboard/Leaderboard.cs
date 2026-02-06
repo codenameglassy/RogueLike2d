@@ -6,8 +6,9 @@ using TMPro;
 
 public class Leaderboard : MonoBehaviour
 {
-    public PlayerManager playerManager;
+    public static Leaderboard instance;
 
+ 
     string leaderboardID = "32957";
 
     public TextMeshProUGUI playerNamesTxt;
@@ -16,7 +17,12 @@ public class Leaderboard : MonoBehaviour
     public TextMeshProUGUI personalScoreTxt;
 
     public GameObject loadingGo;
-   
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +32,7 @@ public class Leaderboard : MonoBehaviour
     public IEnumerator SubmitScoreRoutine(int scoreToUpload)
     {
         bool done = false;
-        string playerID = playerManager.GetPlayerID();
+        string playerID = PlayerManager.Instance.GetPlayerID();
         LootLockerSDKManager.SubmitScore(playerID, scoreToUpload, leaderboardID, (response =>
         {
             if (response.success)
@@ -36,7 +42,7 @@ public class Leaderboard : MonoBehaviour
             }
             else
             {
-                Debug.Log("Failed" + response.errorData);
+                Debug.Log("Failed" + response.errorData.message);
                 done = true;
             }
         }));
@@ -82,7 +88,7 @@ public class Leaderboard : MonoBehaviour
             }
             else
             {
-                Debug.Log("Failed fetching leaderboard" + response.errorData);
+                Debug.Log("Failed fetching leaderboard" + response.errorData.message);
                 done = true;
             }
         });
@@ -97,7 +103,7 @@ public class Leaderboard : MonoBehaviour
     public IEnumerator FetechPersonalScoreRoutine()
     {
         bool done = false;
-        LootLockerSDKManager.GetMemberRank(leaderboardID, playerManager.GetPlayerID(), (response) =>
+        LootLockerSDKManager.GetMemberRank(leaderboardID, PlayerManager.Instance.GetPlayerID(), (response) =>
         {
             if (response.success)
             {
@@ -112,6 +118,8 @@ public class Leaderboard : MonoBehaviour
             }
             else
             {
+                Debug.Log("Failed fetching personal score " + response.errorData.message);
+
                 Debug.Log("Failed to get player's score");
                 done = true;
             }
