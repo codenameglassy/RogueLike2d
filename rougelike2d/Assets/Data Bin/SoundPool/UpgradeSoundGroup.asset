@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5308b4d37ae4b4c8cf793a5bcdba0b, type: 3}
+  m_Name: UpgradeSoundGroup
+  m_EditorClassIdentifier: 
+  soundItems:
+  - soundName: missile
+    clips:
+    - {fileID: 8300000, guid: 4e9b7f945db565e4cb215f976ae09e54, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: heal
+    clips:
+    - {fileID: 8300000, guid: 4230b252e97ee7c4e86c8ec2c8d397a2, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: levelup
+    clips:
+    - {fileID: 8300000, guid: 4328a59c485c2a344b9cc5d227f40dfc, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: upgrade
+    clips:
+    - {fileID: 8300000, guid: 66dd3c8372dc4ec4cb6490a1ea9e1a3c, type: 3}
+    - {fileID: 8300000, guid: 75be6ce2856836243acfc451ab61fff2, type: 3}
+    - {fileID: 8300000, guid: f63e3be8808f54a47916450fa0501047, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0
+  - soundName: airblast
+    clips:
+    - {fileID: 8300000, guid: 4fce20198a6561b419166d1c7167d0e7, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0

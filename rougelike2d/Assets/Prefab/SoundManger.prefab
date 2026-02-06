@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e62e8e39e3897db44827c76e6a70f289, type: 2}
   - {fileID: 11400000, guid: 6dfa3116107de864fb6b42bb2a19c107, type: 2}
   - {fileID: 11400000, guid: 456b76d9e8b7fc74c90acf68113ebb8a, type: 2}
+  - {fileID: 11400000, guid: 4eeda22b5b51c8946b2529007223ccee, type: 2}
+  - {fileID: 11400000, guid: c5627cd14d875be4e8c06d382e843010, type: 2}
   masterMixer: {fileID: 24100000, guid: a500f928d3c5a5540b27c69c25ada201, type: 2}
   musicGroup: {fileID: 8537387266076218956, guid: a500f928d3c5a5540b27c69c25ada201, type: 2}
   sfxGroup: {fileID: -6404093027503968104, guid: a500f928d3c5a5540b27c69c25ada201, type: 2}

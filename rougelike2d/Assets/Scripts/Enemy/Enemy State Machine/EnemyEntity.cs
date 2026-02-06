@@ -95,6 +95,7 @@ public class EnemyEntity : MonoBehaviour
         );
 
         proj.GetComponent<EnemyProjectileComponent>().Init(dir);
+        SoundManager.Instance.Play("projectileshoot");
 
     }
 

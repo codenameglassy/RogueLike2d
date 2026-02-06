@@ -114,6 +114,7 @@ public class Leaderboard : MonoBehaviour
                 personalNameTxt.text = "Your Rank\n <br>" + response.rank.ToString() + ". " + response.player.name;
                 personalScoreTxt.text = "Your HighScore\n <br>" + response.score.ToString();
                 //personalNameAndScoreTxt.text = "Personal :- " + response.rank + ". " + response.player.name + " = " + response.score;
+
                 done = true;
             }
             else

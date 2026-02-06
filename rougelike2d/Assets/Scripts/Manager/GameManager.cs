@@ -17,13 +17,11 @@ public class GameManager : MonoBehaviour
     [Header("UI Elements")]
     public CanvasGroup fadeImg;
     public GameObject gameOverPanel;
+    public GameObject loadingUI;
 
     [Header("Gameplay")]
     private bool isGamePaused = false;
     [HideInInspector]public bool isGameOver;
-
-    [Header("Leaderboard")]
-    public Leaderboard leaderboard;
 
     private void Awake()
     {
@@ -125,8 +123,9 @@ public class GameManager : MonoBehaviour
     #region Game Over
     public void DelayedGameover()
     {
-        fadeImg.DOFade(1.0f, 1f);
-        GameOver();
+        loadingUI.SetActive(true);
+        fadeImg.DOFade(1.0f, 1f).OnComplete(GameOver);
+        
     }
 
     public void GameOver()
@@ -138,10 +137,11 @@ public class GameManager : MonoBehaviour
     IEnumerator Enum_Gameover()
     {
         yield return PlayerManager.Instance.SetPlayerNameRoutine();
-        yield return leaderboard.SubmitScoreRoutine(XpManager.instance.currentLevel);
-        yield return leaderboard.FetechLeaderboardRoutine();
-        yield return leaderboard.FetechPersonalScoreRoutine();
-        yield return new WaitForSeconds(1.3f);
+        yield return Leaderboard.instance.SubmitScoreRoutine(ScoreManager.instance.GetScore());
+        yield return Leaderboard.instance.FetechLeaderboardRoutine();
+        yield return Leaderboard.instance.FetechPersonalScoreRoutine();
+        yield return new WaitForSeconds(1f);
+        loadingUI.SetActive(false);
         gameOverPanel.SetActive(true);
     }
     #endregion

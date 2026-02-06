@@ -8,5 +8,6 @@ public class IncreaseAttackPowerUpgade : UpgradeSO
     public override void Apply(GameObject player)
     {
         PlayerStats.instance.IncreasePlayerAttackPower(attackPowerIncrease);
+        SoundManager.Instance.Play("upgrade");
     }
 }

@@ -57,10 +57,13 @@ public class XpManager : MonoBehaviour
         }
 
         UpdateXpBar();
+        ScoreManager.instance.AddScore((int)xpAmt);
     }
 
     void LevelUp()
     {
+        SoundManager.Instance.Play("levelup");
+
         currentLevel++;
 
         // Update Level in UI

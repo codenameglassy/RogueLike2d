@@ -7,5 +7,6 @@ public class HealPlayerUpgarde : UpgradeSO
     public override void Apply(GameObject player)
     {
         PlayerStats.instance.HealPlayer(healAmt);
+        SoundManager.Instance.Play("heal");
     }
 }

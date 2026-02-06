@@ -51,6 +51,7 @@ public class HomingComponent : MonoBehaviour
             if(damageable != null)
             {
                 damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
+                SoundManager.Instance.PlayOneShotLimited("missilehit", 4);
             }
             
         }

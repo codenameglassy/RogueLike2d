@@ -11,6 +11,13 @@ public class MainMenu : MonoBehaviour
     {
         fadeImg.alpha = 1.0f;
         fadeImg.DOFade(0, 1f);
+        StartCoroutine(LoadLeaderboard());
+    }
+
+    IEnumerator LoadLeaderboard()
+    {
+        yield return Leaderboard.instance.FetechLeaderboardRoutine();
+
     }
 
   

@@ -8,5 +8,7 @@ public class IncreaseCritChanceUpgrade : UpgradeSO
     public override void Apply(GameObject player)
     {
         PlayerStats.instance.IncreasePlayerCritChance(cirtChangeIncrease);
+        SoundManager.Instance.Play("upgrade");
+
     }
 }

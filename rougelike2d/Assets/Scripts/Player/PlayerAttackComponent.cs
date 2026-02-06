@@ -102,8 +102,9 @@ public class PlayerAttackComponent : MonoBehaviour
         if (PlayerStats.instance.HasPlayerAirBlastUpgarde())
         {
             ShootAtAllDirection();
+            SoundManager.Instance.Play("airblast");
         }
-       
+
     }
 
     public void ShootAtAllDirection()
