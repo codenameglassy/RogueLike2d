@@ -8,10 +8,10 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
-
-    public List<Transform> enemyList = new List<Transform>();
     public Transform player;
 
+    [Header("Gameplay")]
+    public List<Transform> enemyList = new List<Transform>();
     public List<GameObject> upgardedItemList = new List<GameObject>();
 
     [Header("UI Elements")]
@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     [Header("Gameplay")]
     private bool isGamePaused = false;
     [HideInInspector]public bool isGameOver;
+
+    [Header("Leaderboard")]
+    public Leaderboard leaderboard;
 
     private void Awake()
     {
@@ -122,7 +125,8 @@ public class GameManager : MonoBehaviour
     #region Game Over
     public void DelayedGameover()
     {
-        fadeImg.DOFade(1.0f, 1f).OnComplete(GameOver);
+        fadeImg.DOFade(1.0f, 1f);
+        GameOver();
     }
 
     public void GameOver()
@@ -133,9 +137,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Enum_Gameover()
     {
-        yield return Leaderboard.instance.SubmitScoreRoutine(XpManager.instance.currentLevel);
-        yield return Leaderboard.instance.FetechLeaderboardRoutine();
-        yield return Leaderboard.instance.FetechPersonalScoreRoutine();
+        yield return leaderboard.SubmitScoreRoutine(XpManager.instance.currentLevel);
+        yield return leaderboard.FetechLeaderboardRoutine();
+        yield return leaderboard.FetechPersonalScoreRoutine();
         yield return new WaitForSeconds(1.3f);
         gameOverPanel.SetActive(true);
     }

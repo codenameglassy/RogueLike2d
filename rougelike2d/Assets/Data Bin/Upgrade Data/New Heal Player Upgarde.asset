@@ -15,5 +15,5 @@ MonoBehaviour:
   upgradeName: Heal
   description: Heals your health by 20
   icon: {fileID: 21300000, guid: 4d8abd26e4b074b7c94e97428959b9fb, type: 3}
-  rarity: 2
+  rarity: 1
   healAmt: 20
