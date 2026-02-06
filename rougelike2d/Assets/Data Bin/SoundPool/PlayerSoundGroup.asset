@@ -47,9 +47,10 @@ MonoBehaviour:
     loop: 0
   - soundName: missilehit
     clips:
-    - {fileID: 8300000, guid: 90c2dc6b40f928d4097419e5bd4c1d4a, type: 3}
+    - {fileID: 8300000, guid: 4b0fadb8fc7bdaf489e9f7879d3c71bb, type: 3}
+    - {fileID: 8300000, guid: 9cc2a755bf3be1a418991bf0785b482c, type: 3}
     soundType: 0
     volume: 0.8
-    minPitch: 1.1
-    maxPitch: 1.5
+    minPitch: 0.8
+    maxPitch: 1.1
     loop: 0

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public CanvasGroup fadeImg;
     public GameObject gameOverPanel;
     public GameObject loadingUI;
+    public CanvasGroup tutorialUI;
 
     [Header("Gameplay")]
     private bool isGamePaused = false;
@@ -34,6 +35,10 @@ public class GameManager : MonoBehaviour
         fadeImg.alpha = 1.0f;
         DelayedFadeIn();
         SoundManager.Instance.Play("Theme");
+
+        Invoke("FadeTutorialUI", 10f);
+
+
     }
 
 
@@ -74,6 +79,11 @@ public class GameManager : MonoBehaviour
     {
         fadeImg.DOFade(1.0f, 1.5f);
 
+    }
+
+    void FadeTutorialUI()
+    {
+        tutorialUI.DOFade(0, 3f);
     }
     #endregion
 

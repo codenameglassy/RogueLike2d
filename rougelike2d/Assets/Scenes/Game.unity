@@ -10514,8 +10514,8 @@ MonoBehaviour:
   fadeImg: {fileID: 1300498375}
   gameOverPanel: {fileID: 730706941}
   loadingUI: {fileID: 1723356202}
+  tutorialUI: {fileID: 1708556410}
   isGameOver: 0
-  leaderboard: {fileID: 1884710192}
 --- !u!1001 &4960523641715512665
 PrefabInstance:
   m_ObjectHideFlags: 0

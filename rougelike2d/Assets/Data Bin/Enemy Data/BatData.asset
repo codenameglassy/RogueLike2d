@@ -25,4 +25,7 @@ MonoBehaviour:
     m_Bits: 64
   knockbackForce: 15
   knockbackDuration: 0.15
-  xpToGive: 5
+  xpToGive: 15
+  rangeAttackRange: 0
+  rangeAttackTime: 0
+  enemyProjctile: {fileID: 0}

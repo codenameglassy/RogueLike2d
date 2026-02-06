@@ -27,6 +27,7 @@ public class EnemyProjectileComponent : MonoBehaviour
             if (damageable != null)
                 damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
 
+            SoundManager.Instance.Play("projectilehit");
             Destroy(gameObject);
         }
     }

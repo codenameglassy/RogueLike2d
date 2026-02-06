@@ -15,7 +15,7 @@ MonoBehaviour:
   soundItems:
   - soundName: missile
     clips:
-    - {fileID: 8300000, guid: 4e9b7f945db565e4cb215f976ae09e54, type: 3}
+    - {fileID: 8300000, guid: b6f241ae7a4466746985d19989ea828f, type: 3}
     soundType: 0
     volume: 0.7
     minPitch: 0.9
