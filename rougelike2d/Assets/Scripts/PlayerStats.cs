@@ -20,6 +20,7 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Player Component Reference")]
     public PlayerHealthComponent playerHealthComponent;
+    public GameObject flamethrowerComponent;
 
     private void Awake()
     {
@@ -54,6 +55,11 @@ public class PlayerStats : MonoBehaviour
     public void HealPlayer(float _healAmt)
     {
         playerHealthComponent.Heal(_healAmt);
+    }
+
+    public void UnlockFlameThrower()
+    {
+        flamethrowerComponent.SetActive(true);
     }
 
     #region UI

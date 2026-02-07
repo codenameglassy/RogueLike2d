@@ -55,3 +55,11 @@ MonoBehaviour:
     minPitch: 0.9
     maxPitch: 1.1
     loop: 0
+  - soundName: incendiary
+    clips:
+    - {fileID: 8300000, guid: ed6e33e5b8805f24d96c4beedd5b502e, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0

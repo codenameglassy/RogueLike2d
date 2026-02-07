@@ -150,7 +150,7 @@ public class GameManager : MonoBehaviour
         yield return Leaderboard.instance.SubmitScoreRoutine(ScoreManager.instance.GetScore());
         yield return Leaderboard.instance.FetechLeaderboardRoutine();
         yield return Leaderboard.instance.FetechPersonalScoreRoutine();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         loadingUI.SetActive(false);
         gameOverPanel.SetActive(true);
     }

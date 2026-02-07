@@ -12,6 +12,15 @@ public class EnemyAttackComponent : MonoBehaviour
 
     [SerializeField] private EnemyData data;
 
+    private void Awake()
+    {
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+
+    }
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
+    }
 
     private void Start()
     {
@@ -66,5 +75,10 @@ public class EnemyAttackComponent : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.position, data.attackRange);
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 }
