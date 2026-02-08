@@ -66,7 +66,7 @@ public class EnemyAttackComponent : MonoBehaviour
         {
             for (int i = 0; i < hitinfo.Length; i++)
             {
-                hitinfo[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position);
+                hitinfo[i].GetComponent<IDamageable>().RecieveDamage(gameObject, data.attackDamage, transform.position,false);
                 
             }
         }

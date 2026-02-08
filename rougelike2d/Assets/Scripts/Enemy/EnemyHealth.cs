@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FGT.Prototypes.DamagePopup;
 
 public class EnemyHealth : HealthComponent
 {
@@ -22,12 +23,21 @@ public class EnemyHealth : HealthComponent
     }
 
 
-    public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
+    public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction, bool isCrit)
     {
-        base.RecieveDamage(attacker, damageAmt, direction);
+        base.RecieveDamage(attacker, damageAmt, direction, isCrit);
+
+        if (isCrit)
+        {
+            DamagePopup.Create(damageAmt.ToString(), 1f * Vector2.up, transform, Color.red, 6);
+            DamagePopup.Create("CRITICAL", 1.5f * Vector2.up, transform, Color.red, 7);
+        }
+        else
+        {
+            DamagePopup.Create(damageAmt.ToString(), 1f * Vector2.up, transform, Color.white, 5);
+        }
 
         entity.stateMachine.ChangeState(entity.hurtState);
-       
         SoundManager.Instance.PlayOneShotLimited("hit");
         sr.material = entity.data.whiteMat;
         Invoke("ResetMat", .14f);

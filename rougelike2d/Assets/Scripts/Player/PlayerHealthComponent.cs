@@ -24,9 +24,9 @@ public class PlayerHealthComponent : HealthComponent
         UpdateHealthBar();
     }
 
-    public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
+    public override void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction, bool isCrit =false)
     {
-        base.RecieveDamage(attacker, damageAmt, direction);
+        base.RecieveDamage(attacker, damageAmt, direction, isCrit);
 
         sr.material = playerEntity.data.whiteMat;
         Invoke("ResetMat", .14f);

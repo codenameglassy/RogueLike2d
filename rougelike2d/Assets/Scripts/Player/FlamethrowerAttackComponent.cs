@@ -82,7 +82,7 @@ public class FlamethrowerAttackComponent : MonoBehaviour
         {
             if (hits[i].TryGetComponent(out IDamageable damageable))
             {
-                damageable.RecieveDamage(gameObject, 5f, transform.position);
+                damageable.RecieveDamage(gameObject, 5f, transform.position,false);
             }
         }
     }

@@ -50,7 +50,7 @@ public class HomingComponent : MonoBehaviour
             IDamageable damageable = hitInfo[i].GetComponent<IDamageable>();
             if(damageable != null)
             {
-                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
+                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position, false);
                 SoundManager.Instance.PlayOneShotLimited("missilehit", 4);
             }
             

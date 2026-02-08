@@ -63,3 +63,11 @@ MonoBehaviour:
     minPitch: 0.9
     maxPitch: 1.1
     loop: 0
+  - soundName: flameThrowerSwitchDirection
+    clips:
+    - {fileID: 8300000, guid: 8b2ce43195f84974a964e5f751f9bf66, type: 3}
+    soundType: 0
+    volume: 0.7
+    minPitch: 0.9
+    maxPitch: 1.1
+    loop: 0

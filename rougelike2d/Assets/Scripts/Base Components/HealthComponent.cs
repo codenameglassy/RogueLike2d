@@ -23,7 +23,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
         
     }
 
-    public virtual void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
+    public virtual void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction, bool isCrit = false)
     {
         currentHealth -= damageAmt;
     }

@@ -16,6 +16,15 @@ public class FlamethrowerComponent : MonoBehaviour
     [Header("Vertical")]
     public GameObject flameThrowerVertical;
 
+    private void Awake()
+    {
+        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
+    }
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
+    }
+
     private void Start()
     {
         Initialize();
@@ -60,6 +69,12 @@ public class FlamethrowerComponent : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         SwitchDirection();
+        SoundManager.Instance.Play("flameThrowerSwitchDirection");
         StartCoroutine(SwitchDirectionRoutine());
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 }
