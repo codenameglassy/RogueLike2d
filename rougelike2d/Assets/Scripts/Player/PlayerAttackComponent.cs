@@ -39,14 +39,10 @@ public class PlayerAttackComponent : MonoBehaviour
         Collider2D[] hitinfoDown = Physics2D.OverlapCircleAll(attackPointDown.position, data.attackRange, data.damageableLayer);
 
         float currentDamage = data.attackDamage + PlayerStats.instance.GetPlayerAttackPower();
-       
+        currentDamage = CalculateDamage((int)currentDamage);
         Debug.Log(currentDamage + " Dealing damage.");
 
-        bool isCrit = Random.value < (PlayerStats.instance.GetPlayerCritChance() / 100f);
-        if (isCrit)
-        {
-            currentDamage = CalculateCritDamage((int)currentDamage);
-        }
+       
 
         switch (movementComponent.IsFacingRight())
         {
@@ -55,7 +51,7 @@ public class PlayerAttackComponent : MonoBehaviour
                 {
                     for (int i = 0; i < hitinfoRight.Length; i++)
                     {
-                        hitinfoRight[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position, isCrit);
+                        hitinfoRight[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
                     }
                 }
                 break;
@@ -65,7 +61,7 @@ public class PlayerAttackComponent : MonoBehaviour
                 {
                     for (int i = 0; i < hitinfoLeft.Length; i++)
                     {
-                        hitinfoLeft[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position, isCrit);
+                        hitinfoLeft[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
                     }
                 }
 
@@ -76,7 +72,7 @@ public class PlayerAttackComponent : MonoBehaviour
         {
             for (int i = 0; i < hitinfoUp.Length; i++)
             {
-                hitinfoUp[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position, isCrit);
+                hitinfoUp[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
             }
         }
 
@@ -84,7 +80,7 @@ public class PlayerAttackComponent : MonoBehaviour
         {
             for (int i = 0; i < hitinfoDown.Length; i++)
             {
-                hitinfoDown[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position, isCrit);
+                hitinfoDown[i].GetComponent<IDamageable>().RecieveDamage(gameObject, currentDamage, transform.position);
             }
         }
 
@@ -162,11 +158,17 @@ public class PlayerAttackComponent : MonoBehaviour
 
     private float critMultiplier = 2f;
 
-    public int CalculateCritDamage(int baseDamage)
-    { 
-        Debug.Log("CRITICAL HIT!");
-        return Mathf.RoundToInt(baseDamage * critMultiplier);
-   
+    public int CalculateDamage(int baseDamage)
+    {
+        bool isCrit = Random.value < (PlayerStats.instance.GetPlayerCritChance() / 100f);
+
+        if (isCrit)
+        {
+            Debug.Log("CRITICAL HIT!");
+            return Mathf.RoundToInt(baseDamage * critMultiplier);
+        }
+
+        return baseDamage;
     }
 
     private void OnGameStateChanged(GameState newGameState)

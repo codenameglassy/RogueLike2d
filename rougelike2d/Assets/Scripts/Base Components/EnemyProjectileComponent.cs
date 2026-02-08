@@ -8,19 +8,6 @@ public class EnemyProjectileComponent : MonoBehaviour
     private Vector2 direction;
 
     public ProjectileData data;
-
-    private void Awake()
-    {
-
-        GameStateManager.Instance.onGameStateChanged += OnGameStateChanged;
-    }
-
-    private void OnDestroy()
-    {
-        GameStateManager.Instance.onGameStateChanged -= OnGameStateChanged;
-
-    }
-
     public void Init(Vector2 shootDirection)
     {
         direction = shootDirection.normalized;
@@ -38,16 +25,10 @@ public class EnemyProjectileComponent : MonoBehaviour
             IDamageable damageable = hitInfo.GetComponent<IDamageable>();
 
             if (damageable != null)
-                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position, false);
+                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
 
             SoundManager.Instance.Play("projectilehit");
             Destroy(gameObject);
         }
-    }
-
-    private void OnGameStateChanged(GameState newGameState)
-    {
-        enabled = newGameState == GameState.Gameplay;
-
     }
 }

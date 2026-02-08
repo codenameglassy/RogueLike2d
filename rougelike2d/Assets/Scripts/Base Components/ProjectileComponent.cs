@@ -30,7 +30,7 @@ public class ProjectileComponent : MonoBehaviour
             IDamageable damageable = hitInfo.GetComponent<IDamageable>();
 
             if(damageable != null)
-                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position, false);
+                damageable.RecieveDamage(gameObject, data.projectileDamage, transform.position);
 
             Destroy(gameObject);
         }

@@ -38,13 +38,4 @@ public class GameDirector : MonoBehaviour
     public bool CanSpend(int cost) => currentBudget >= cost;
 
     public void Spend(int cost) => currentBudget -= cost;
-
-    public void OnLevelUp(int level)
-    {
-        if (level == 20) baseBudgetPerSecond = 3f;
-        if (level == 40) baseBudgetPerSecond = 4f;
-        if (level == 80) baseBudgetPerSecond = 5f;
-        if (level == 120) baseBudgetPerSecond = 6f;
-
-    }
 }

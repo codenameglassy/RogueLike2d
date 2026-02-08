@@ -16,7 +16,7 @@ public class Chest : MonoBehaviour, IDamageable
         sr.material = defMat;
     }
 
-    public void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction, bool isCrit)
+    public void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction)
     {
         sr.material = whiteMat;
         Invoke("ResetMat", .1f);

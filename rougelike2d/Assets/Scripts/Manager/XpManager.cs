@@ -66,9 +66,6 @@ public class XpManager : MonoBehaviour
 
         currentLevel++;
 
-        // increase budget for difficulty in milestones
-        GameDirector.instance.OnLevelUp(currentLevel);
-
         // Update Level in UI
         levelText.text = "Level: " + currentLevel.ToString();
 

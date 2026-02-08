@@ -133,7 +133,6 @@ public class GameManager : MonoBehaviour
     #region Game Over
     public void DelayedGameover()
     {
-        PauseGame();
         loadingUI.SetActive(true);
         fadeImg.DOFade(1.0f, 1f).OnComplete(GameOver);
         

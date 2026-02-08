@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IDamageable 
 {
-    public void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction, bool isCrit);
+    public void RecieveDamage(GameObject attacker, float damageAmt, Vector2 direction);
 
 }
